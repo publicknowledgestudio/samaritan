@@ -48,6 +48,7 @@
     <a href="/" class="nav-brand">samaritan<span>.bio</span></a>
     <div class="nav-links">
       <a href="/"{% if page.url == "/" %} class="active"{% endif %}>Company</a>
+      <a href="/about/"{% if page.url == "/about/" %} class="active"{% endif %}>About</a>
       <a href="/arobag/"{% if page.url == "/arobag/" %} class="active"{% endif %}>AroBag</a>
       <a href="/blog/"{% if page.url.startsWith("/blog/") %} class="active"{% endif %}>Blog</a>
       <a href="/#team">Team</a>
@@ -75,6 +76,7 @@
     </button>
     <div class="mobile-nav-links">
       <a href="/"{% if page.url == "/" %} class="active"{% endif %}>Company</a>
+      <a href="/about/"{% if page.url == "/about/" %} class="active"{% endif %}>About</a>
       <a href="/arobag/"{% if page.url == "/arobag/" %} class="active"{% endif %}>AroBag</a>
       <a href="/blog/"{% if page.url.startsWith("/blog/") %} class="active"{% endif %}>Blog</a>
       <a href="/#team">Team</a>
@@ -93,52 +95,52 @@
   <footer class="landing-footer">
     <div class="container">
       <div class="footer-grid">
-        <div>
+        <div class="footer-brand-col">
           <a href="/" class="footer-brand">samaritan<span>.bio</span></a>
-          <p>Building AI-powered biomarker intelligence for the human body. Starting with the world's most accessible biofluid.</p>
-          <p class="footer-legal-address">
-            {{ site.companyName }}<br>
-            {{ site.location }}
-          </p>
+          <p>Pioneering automated urine analysis systems for early detection of AKI and improved patient outcomes in critical care environments.</p>
+          <div class="footer-contact">
+            <a href="mailto:{{ site.email }}"><i class="ph-fill ph-envelope-simple" aria-hidden="true"></i> {{ site.email }}</a>
+            <a href="tel:{{ site.phone | replace(' ', '') }}"><i class="ph-fill ph-phone" aria-hidden="true"></i> {{ site.phone }}</a>
+          </div>
+          <div class="footer-addresses">
+            <p><strong>Registered Office:</strong> {{ site.registeredOffice }}</p>
+            <p><strong>Corporate Office:</strong> {{ site.corporateOffice }}</p>
+          </div>
+          <div class="footer-legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
         </div>
         <div>
           <h4>Company</h4>
           <ul class="footer-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/#team">Team</a></li>
+            <li><a href="/">About Us</a></li>
+            <li><a href="/#team">Our Team</a></li>
             <li><a href="/#contact">Contact</a></li>
+            <li><a href="/careers/">Careers</a></li>
           </ul>
         </div>
         <div>
-          <h4>Product</h4>
+          <h4>Resources</h4>
           <ul class="footer-links">
-            <li><a href="/arobag/">AroBag</a></li>
-            <li><a href="/arobag/#how-it-works">How It Works</a></li>
-            <li><a href="/arobag/#clinical">Clinical Evidence</a></li>
+            <li><a href="/arobag/#clinical">Clinical Trials</a></li>
+            <li><a href="mailto:{{ site.email }}?subject=Demo%20Request">Request Demo</a></li>
+            <li><a href="#">Savings Calculator</a></li>
           </ul>
         </div>
         <div>
-          <h4>Connect</h4>
-          <ul class="footer-links">
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% for founder in site.team.founders %}
-            <li><a href="{{ founder.linkedin }}" target="_blank" rel="noopener">LinkedIn — {{ founder.name.split(' ')[0] }}</a></li>
-            {% endfor %}
-          </ul>
+          <h4>Subscribe</h4>
+          <form class="footer-subscribe" action="mailto:{{ site.email }}?subject=Newsletter%20Signup" method="post" enctype="text/plain">
+            <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+            <button type="submit">
+              <i class="ph-fill ph-arrow-right" aria-hidden="true"></i>
+            </button>
+          </form>
         </div>
       </div>
       <div class="footer-divider"></div>
       <div class="footer-bottom-row">
-        <p>&copy; {{ page.date.getFullYear() }} {{ site.companyName }}. All rights reserved.</p>
-        <div class="footer-social">
-          <a href="{{ site.team.founders[0].linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <i class="ph-fill ph-linkedin-logo" aria-hidden="true"></i>
-          </a>
-          <a href="mailto:{{ site.email }}" aria-label="Email">
-            <i class="ph-fill ph-envelope-simple" aria-hidden="true"></i>
-          </a>
-        </div>
+        <p>&copy; {{ page.date.getFullYear() }} {{ site.companyName }} | CIN: {{ site.cin }} | All rights reserved.</p>
       </div>
     </div>
   </footer>
