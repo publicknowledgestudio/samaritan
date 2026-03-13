@@ -716,7 +716,7 @@ h4 {
 
 .landing-footer {
   padding: 64px 0 32px;
-  background: var(--color-gray-50);
+  background: linear-gradient(to bottom, var(--color-gray-50), white);
   color: var(--color-gray-900);
   border-top: 1px solid var(--color-gray-200);
 }
@@ -770,7 +770,7 @@ h4 {
 }
 
 .footer-logo {
-  height: 30px;
+  height: 48px;
   width: auto;
 }
 
@@ -1284,6 +1284,26 @@ h4 {
   }
 }
 
+/* Clinical Evidence */
+.clinical-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+@media (max-width: 1023px) {
+  .clinical-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .clinical-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* What AroBag Measures */
 .measures-section {
   background: var(--color-navy-950);
@@ -1603,7 +1623,6 @@ h4 {
   padding: 24px;
   background: #FEF2F2;
   border-radius: 8px;
-  border-left: 3px solid #EF4444;
 }
 
 .problem-highlight-item h4 {
@@ -1657,14 +1676,12 @@ h4 {
 .product-feature-card {
   padding: 24px;
   background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   transition: all 0.3s;
 }
 
 .product-feature-card:hover {
   background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
 }
 
@@ -2078,7 +2095,6 @@ h4 {
 .advisors-section {
   margin-top: 56px;
   padding-top: 40px;
-  border-top: 1px solid var(--color-gray-200);
 }
 
 .advisors-heading {
@@ -2161,26 +2177,40 @@ h4 {
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, var(--color-navy-800) 0%, var(--color-navy-600) 100%);
+  background: var(--color-navy-950);
   color: white;
   text-align: center;
   position: relative;
   overflow: hidden;
+  min-height: auto;
+  padding: 96px 0;
 }
 
 .cta-section::before {
   content: '';
   position: absolute;
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 600px;
   border-radius: 50%;
-  right: -200px;
-  top: -200px;
-  background: radial-gradient(circle, rgba(13, 148, 136, 0.15) 0%, transparent 70%);
+  right: -150px;
+  top: -150px;
+  background: radial-gradient(circle, rgba(13, 148, 136, 0.12) 0%, transparent 70%);
   pointer-events: none;
 }
 
-.cta-section>* {
+.cta-section::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  left: -150px;
+  bottom: -200px;
+  background: radial-gradient(circle, rgba(13, 148, 136, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cta-section > * {
   position: relative;
   z-index: 1;
 }
@@ -2193,25 +2223,33 @@ h4 {
 }
 
 .cta-section p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.75);
   font-size: 18px;
   max-width: 560px;
   margin: 0 auto 32px;
-}
-
-.cta-hiring {
-  margin-top: 32px;
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
 }
 
 .cta-section .eyebrow-teal {
   color: var(--color-teal-300);
 }
 
+.cta-hiring {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: inline-block;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
 .cta-hiring a {
   color: var(--color-teal-300);
   text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cta-hiring a:hover {
+  color: var(--color-teal-200);
 }
 
 @media (min-width: 768px) {
@@ -3449,7 +3487,7 @@ h4 {
 
 .career-tile-meta {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 16px;
   font-size: 13px;
   color: var(--color-gray-500);
@@ -3512,6 +3550,21 @@ h4 {
   color: var(--color-teal-700);
 }
 
+.job-detail-header {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.job-detail-header-row {
+  padding-bottom: 32px;
+  margin-bottom: 48px;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.job-detail-header-row .button {
+  margin-top: 24px;
+}
+
 .job-detail-header h1 {
   font-size: 36px;
   color: var(--color-navy-800);
@@ -3524,9 +3577,6 @@ h4 {
   flex-wrap: wrap;
   font-size: 15px;
   color: var(--color-gray-500);
-  margin-bottom: 48px;
-  padding-bottom: 32px;
-  border-bottom: 1px solid var(--color-gray-200);
 }
 
 .job-detail-meta span {
@@ -3542,7 +3592,7 @@ h4 {
 
 .job-detail-body {
   max-width: 700px;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
 }
 
 .job-detail-body h2 {
@@ -3583,18 +3633,10 @@ h4 {
   color: var(--color-gray-600);
 }
 
-.job-detail-footer {
-  padding-top: 32px;
-  border-top: 1px solid var(--color-gray-200);
-}
-
-.job-detail-footer .button {
-  margin-bottom: 16px;
-}
-
 .job-detail-footer-note {
   font-size: 14px;
   color: var(--color-gray-500);
+  margin-top: 12px;
 }
 
 .job-detail-footer-note a {
@@ -3660,16 +3702,16 @@ h4 {
 .logo-ticker-track {
   display: flex;
   align-items: center;
-  width: max-content;
+  width: fit-content;
   animation: ticker-scroll 30s linear infinite;
   will-change: transform;
 }
 
 .ticker-set {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 64px;
-  padding-right: 64px;
+  padding: 0 32px;
   flex-shrink: 0;
 }
 

@@ -1,0 +1,213 @@
+---
+layout: layouts/base.njk
+title: "Backup — Archived Sections"
+description: "Archived sections from the home page."
+permalink: /backup/
+eleventyExcludeFromCollections: true
+---
+
+<!-- Backup Hero -->
+<section class="deck-section landing-hero">
+  <div class="container text-center">
+    <p class="eyebrow reveal">Internal</p>
+    <h1 class="reveal reveal-delay-1">Archived Sections</h1>
+    <p class="hero-lead reveal reveal-delay-2">
+      These sections were created earlier and removed from the live site.
+      They're kept here for reference and can be restored at any time.
+    </p>
+  </div>
+  <img src="/assets/hero-gradient.svg" alt="" class="hero-gradient" aria-hidden="true">
+</section>
+
+<!-- Patient Funnel Section -->
+<section class="deck-section-short funnel-section">
+  <div class="container">
+    <p class="eyebrow">Where Problems Begin</p>
+    <h2 class="text-center reveal">Surgery &rarr; ICU &rarr; Catheter</h2>
+    <p class="section-description reveal reveal-delay-1">
+      Every year, a massive patient population flows through the same critical path — and kidney injury goes undetected until it's too late.
+    </p>
+    <div class="funnel-grid">
+      <div class="funnel-step reveal">
+        <div class="funnel-icon"><i class="ph-fill ph-heartbeat" aria-hidden="true"></i></div>
+        <div class="funnel-number" data-target="300" data-suffix="M">0M</div>
+        <p class="funnel-label">surgeries performed annually worldwide</p>
+        <div class="funnel-tag">Surgery</div>
+      </div>
+      <div class="funnel-arrow reveal reveal-delay-1">
+        <i class="ph-fill ph-arrow-right" aria-hidden="true"></i>
+      </div>
+      <div class="funnel-step reveal reveal-delay-1">
+        <div class="funnel-icon"><i class="ph-fill ph-bed" aria-hidden="true"></i></div>
+        <div class="funnel-number">Up to 25%</div>
+        <p class="funnel-label">of surgeries result in ICU admission</p>
+        <div class="funnel-tag">ICU</div>
+      </div>
+      <div class="funnel-arrow reveal reveal-delay-2">
+        <i class="ph-fill ph-arrow-right" aria-hidden="true"></i>
+      </div>
+      <div class="funnel-step reveal reveal-delay-2">
+        <div class="funnel-icon"><i class="ph-fill ph-drop" aria-hidden="true"></i></div>
+        <div class="funnel-number" data-target="80" data-suffix="%">0%</div>
+        <p class="funnel-label">of ICU patients are catheterised</p>
+        <div class="funnel-tag">Catheter</div>
+      </div>
+    </div>
+    <div class="funnel-footnote reveal reveal-delay-3">
+      <p>Of these catheterised patients, <strong>20–50% will develop Acute Kidney Injury</strong> — with mortality exceeding 50% in severe cases. Yet there is no continuous monitoring system in place.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Problem Section -->
+<section class="deck-section problem-section">
+  <div class="container">
+    <div class="problem-content">
+      <p class="eyebrow eyebrow-left">The Problem</p>
+      <h2 class="reveal">The standard of care hasn't changed in decades</h2>
+      <p class="reveal reveal-delay-1">
+        Today, ICU nurses manually measure urine output every hour — a process that is error-prone,
+        labour-intensive, and provides data far too late to prevent organ damage. By the time AKI is detected
+        through conventional methods, the window for effective intervention has often already closed.
+      </p>
+      <div class="problem-highlight reveal reveal-delay-2">
+        <div class="problem-highlight-item">
+          <h4>Manual Measurement</h4>
+          <p>Hourly readings by hand. Subjective, inconsistent, and takes nurses away from critical care.</p>
+        </div>
+        <div class="problem-highlight-item">
+          <h4>Late Detection</h4>
+          <p>Creatinine-based diagnosis catches AKI hours or days after damage has already begun.</p>
+        </div>
+        <div class="problem-highlight-item">
+          <h4>Preventable Deaths</h4>
+          <p>Earlier detection — even by hours — dramatically improves outcomes and reduces mortality.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Product Intro Section -->
+<section class="deck-section product-intro-section">
+  <div class="container text-center">
+    <p class="eyebrow eyebrow-teal">Introducing AroBag</p>
+    <h2 class="reveal">The complete AI kidney monitoring system</h2>
+    <p class="product-intro-lead reveal reveal-delay-1">
+      Hardware + AI + Software in one integrated solution. AroBag continuously monitors urine biomarkers, runs
+      predictive models, and delivers actionable alerts — all at a fraction of the cost of existing solutions.
+    </p>
+    <div class="product-feature-grid reveal reveal-delay-2">
+      <div class="product-feature-card">
+        <div class="product-feature-icon"><i class="ph-fill ph-drop" aria-hidden="true"></i></div>
+        <h4>Smart Monitoring Bag</h4>
+        <p>Continuous urine output and biomarker monitoring through an intelligently designed collection system.</p>
+      </div>
+      <div class="product-feature-card">
+        <div class="product-feature-icon"><i class="ph-fill ph-brain" aria-hidden="true"></i></div>
+        <h4>AI Prediction Engine</h4>
+        <p>Machine learning models trained to detect early signs of AKI and CKD — hours before conventional diagnosis.</p>
+      </div>
+      <div class="product-feature-card">
+        <div class="product-feature-icon"><i class="ph-fill ph-device-mobile" aria-hidden="true"></i></div>
+        <h4>Companion App + EMR</h4>
+        <p>Computer vision digitises measurements. Data syncs seamlessly with hospital Electronic Medical Records.</p>
+      </div>
+    </div>
+    <div class="product-intro-cta reveal reveal-delay-3">
+      <a href="/arobag/" class="btn-white">
+        Learn More About AroBag
+        <i class="ph-fill ph-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Market Section -->
+<section class="deck-section market-section">
+  <div class="container">
+    <div class="market-content">
+      <div class="market-text">
+        <p class="eyebrow eyebrow-left">Market Opportunity</p>
+        <h2 class="reveal">A nascent market with no dominant player</h2>
+        <p class="reveal reveal-delay-1">
+          Over $200M has been deployed across competitors in the AKI prediction and urine monitoring space — yet 99%
+          of the market remains uncaptured. No affordable, comprehensive solution exists today.
+        </p>
+        <p class="reveal reveal-delay-2">
+          AroBag is the only solution combining hardware, AI, and EMR integration at a price point accessible to
+          hospitals globally — not just in developed markets.
+        </p>
+      </div>
+      <div class="market-visual">
+        <div class="market-metric reveal">
+          <div class="market-metric-number">$200M+</div>
+          <p class="market-metric-label">Deployed by competitors — yet no one has cracked it</p>
+        </div>
+        <div class="market-metric reveal reveal-delay-1">
+          <div class="market-metric-number">3-in-1</div>
+          <p class="market-metric-label">Only product combining hardware + AI + EMR integration</p>
+        </div>
+        <div class="market-metric reveal reveal-delay-2">
+          <div class="market-metric-number">Global</div>
+          <p class="market-metric-label">Cost position enables access across developed and emerging markets</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Regulatory & Milestones Section -->
+<section class="deck-section-short regulatory-section" id="regulatory">
+  <div class="container">
+    <p class="eyebrow">Regulatory & IP</p>
+    <h2 class="text-center reveal">Built for the path to market</h2>
+    <p class="section-description reveal reveal-delay-1">
+      Samaritan is building on a foundation of intellectual property protection and a clear regulatory strategy.
+    </p>
+    <div class="regulatory-grid">
+      <div class="regulatory-card reveal">
+        <div class="regulatory-card-icon"><i class="ph-fill ph-shield-check" aria-hidden="true"></i></div>
+        <h4>Patent Pending</h4>
+        <p>Core technology and system architecture are protected under patent applications filed in India.</p>
+      </div>
+      <div class="regulatory-card reveal reveal-delay-1">
+        <div class="regulatory-card-icon"><i class="ph-fill ph-certificate" aria-hidden="true"></i></div>
+        <h4>Regulatory Pathway</h4>
+        <p>Targeting CDSCO approval in India, with FDA 510(k) or De Novo pathway planned for the US market.</p>
+      </div>
+      <div class="regulatory-card reveal reveal-delay-2">
+        <div class="regulatory-card-icon"><i class="ph-fill ph-flask" aria-hidden="true"></i></div>
+        <h4>Pre-Clinical Stage</h4>
+        <p>Currently in pre-clinical trials. Clinical validation studies are being designed for the next phase.</p>
+      </div>
+    </div>
+    <div class="milestones-timeline reveal reveal-delay-3">
+      <div class="milestone milestone-completed">
+        <div class="milestone-dot"><i class="ph-fill ph-check" aria-hidden="true"></i></div>
+        <p class="milestone-year">2019</p>
+        <p class="milestone-label">Founded</p>
+      </div>
+      <div class="milestone milestone-completed">
+        <div class="milestone-dot"><i class="ph-fill ph-check" aria-hidden="true"></i></div>
+        <p class="milestone-year">2022</p>
+        <p class="milestone-label">IP Filed</p>
+      </div>
+      <div class="milestone milestone-completed">
+        <div class="milestone-dot"><i class="ph-fill ph-check" aria-hidden="true"></i></div>
+        <p class="milestone-year">2024</p>
+        <p class="milestone-label">Prototype</p>
+      </div>
+      <div class="milestone milestone-current">
+        <div class="milestone-dot"><i class="ph-fill ph-pulse" aria-hidden="true"></i></div>
+        <p class="milestone-year">Now</p>
+        <p class="milestone-label">Pre-Clinical Trials</p>
+      </div>
+      <div class="milestone milestone-upcoming">
+        <div class="milestone-dot"><i class="ph-fill ph-arrow-right" aria-hidden="true"></i></div>
+        <p class="milestone-year">Next</p>
+        <p class="milestone-label">Clinical Trials</p>
+      </div>
+    </div>
+  </div>
+</section>
