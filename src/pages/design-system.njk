@@ -152,36 +152,40 @@ eleventyExcludeFromCollections: true
         <p style="font-family: var(--font-body); font-size: var(--text-lg); color: var(--color-gray-600); margin: 0;">The quick brown fox jumps over the lazy dog</p>
       </div>
       <div class="ds-type-row">
-        <div class="ds-type-meta">--text-xl: 20px — h4, card titles</div>
+        <div class="ds-type-meta">--text-xl: 20px — card titles, sub-headings</div>
         <p style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 600; color: var(--color-navy-800); margin: 0;">The quick brown fox jumps over the lazy dog</p>
       </div>
       <div class="ds-type-row">
-        <div class="ds-type-meta">--text-2xl: 24px — h3</div>
+        <div class="ds-type-meta">--text-2xl: 24px — h4</div>
         <p style="font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 600; color: var(--color-navy-800); margin: 0;">The quick brown fox jumps over</p>
       </div>
       <div class="ds-type-row">
-        <div class="ds-type-meta">--text-3xl: 30px — h2 mobile</div>
+        <div class="ds-type-meta">--text-3xl: 30px — h3</div>
         <p style="font-family: var(--font-heading); font-size: var(--text-3xl); font-weight: 600; color: var(--color-navy-800); margin: 0;">The quick brown fox jumps</p>
       </div>
       <div class="ds-type-row">
-        <div class="ds-type-meta">--text-4xl: 36px — h2 desktop / h1 mobile</div>
-        <p style="font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: 600; color: var(--color-navy-800); margin: 0; letter-spacing: var(--tracking-tight);">The quick brown fox</p>
+        <div class="ds-type-meta">--text-4xl: 36px — h2</div>
+        <p style="font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: 600; color: var(--color-navy-800); margin: 0; letter-spacing: var(--tracking-heading);">The quick brown fox</p>
       </div>
       <div class="ds-type-row">
-        <div class="ds-type-meta">--text-5xl: 48px — h1 desktop</div>
-        <p style="font-family: var(--font-heading); font-size: var(--text-5xl); font-weight: 600; color: var(--color-navy-800); margin: 0; letter-spacing: var(--tracking-tight); line-height: var(--leading-none);">The quick brown</p>
+        <div class="ds-type-meta">--text-5xl: 48px — h1</div>
+        <p style="font-family: var(--font-heading); font-size: var(--text-5xl); font-weight: 600; color: var(--color-navy-800); margin: 0; letter-spacing: var(--tracking-heading); line-height: var(--leading-none);">The quick brown</p>
       </div>
       <div class="ds-type-row">
         <div class="ds-type-meta">--text-6xl: 60px — display, stat numbers</div>
-        <p style="font-family: var(--font-heading); font-size: var(--text-6xl); font-weight: 600; color: var(--color-navy-800); margin: 0; letter-spacing: var(--tracking-tight); line-height: var(--leading-none);">310M</p>
+        <p style="font-family: var(--font-heading); font-size: var(--text-6xl); font-weight: 600; color: var(--color-navy-800); margin: 0; letter-spacing: var(--tracking-heading); line-height: var(--leading-none);">310M</p>
       </div>
     </div>
 
     <p class="ds-label">Tracking (Letter Spacing)</p>
     <div style="margin-bottom: 32px;">
       <div class="ds-type-row">
-        <div class="ds-type-meta">--tracking-tight: -0.02em — headings, display</div>
-        <p style="font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 600; color: var(--color-navy-800); letter-spacing: var(--tracking-tight); margin: 0;">Tight tracking for headings</p>
+        <div class="ds-type-meta">--tracking-heading: -0.03em — headings, display text</div>
+        <p style="font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 600; color: var(--color-navy-800); letter-spacing: var(--tracking-heading); margin: 0;">Heading tracking for h1–h4</p>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">--tracking-tight: -0.02em — sub-headings, card titles</div>
+        <p style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 600; color: var(--color-navy-800); letter-spacing: var(--tracking-tight); margin: 0;">Tight tracking for sub-headings</p>
       </div>
       <div class="ds-type-row">
         <div class="ds-type-meta">--tracking-normal: 0 — body text</div>
@@ -225,22 +229,22 @@ eleventyExcludeFromCollections: true
     <h2 class="ds-section-title">Typography Elements</h2>
     <p class="ds-section-desc">Heading font: TASA Explorer &nbsp;|&nbsp; Body font: Schibsted Grotesk</p>
 
-    <p class="ds-label">Headings (use type-scale tokens)</p>
+    <p class="ds-label">Headings (uniform sizes, no section overrides)</p>
     <div style="margin-bottom: 32px;">
       <div class="ds-type-row">
-        <div class="ds-type-meta">h1 — text-4xl (36px mobile) → text-5xl (48px desktop)</div>
-        <h1 style="font-size: var(--text-5xl); line-height: var(--leading-none); margin: 0;">The quick brown fox jumps</h1>
+        <div class="ds-type-meta">h1 — text-5xl (48px) / tracking-heading / leading-tight</div>
+        <h1 style="margin: 0;">The quick brown fox jumps</h1>
       </div>
       <div class="ds-type-row">
-        <div class="ds-type-meta">h2 — text-3xl (30px mobile) → text-4xl (36px desktop)</div>
+        <div class="ds-type-meta">h2 — text-4xl (36px) / tracking-heading / leading-tight</div>
         <h2 style="margin: 0;">The quick brown fox jumps over</h2>
       </div>
       <div class="ds-type-row">
-        <div class="ds-type-meta">h3 — text-2xl (24px)</div>
+        <div class="ds-type-meta">h3 — text-3xl (30px) / tracking-heading / leading-snug</div>
         <h3 style="margin: 0;">The quick brown fox jumps over the lazy dog</h3>
       </div>
       <div class="ds-type-row">
-        <div class="ds-type-meta">h4 — text-xl (20px)</div>
+        <div class="ds-type-meta">h4 — text-2xl (24px) / tracking-heading / leading-snug</div>
         <h4 style="margin: 0;">The quick brown fox jumps over the lazy dog</h4>
       </div>
     </div>

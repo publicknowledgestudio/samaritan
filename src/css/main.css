@@ -50,9 +50,10 @@
   --text-6xl: 60px;     /* display, stat numbers */
 
   /* Tracking (Letter Spacing) */
-  --tracking-tight: -0.02em;   /* headings, display text */
-  --tracking-normal: 0;        /* body text */
-  --tracking-wide: 0.05em;     /* eyebrows, labels, uppercase */
+  --tracking-heading: -0.03em;  /* headings, display text */
+  --tracking-tight: -0.02em;    /* sub-headings, card titles */
+  --tracking-normal: 0;         /* body text */
+  --tracking-wide: 0.05em;      /* eyebrows, labels, uppercase */
 
   /* Leading (Line Height) */
   --leading-none: 1;           /* stat numbers, display */
@@ -103,9 +104,9 @@ ul {
 h1 {
   font-family: var(--font-heading);
   font-weight: 600;
-  font-size: var(--text-4xl);
+  font-size: var(--text-5xl);
   line-height: var(--leading-tight);
-  letter-spacing: var(--tracking-tight);
+  letter-spacing: var(--tracking-heading);
   color: var(--color-gray-900);
   margin-block-end: 0.5em;
 }
@@ -113,9 +114,9 @@ h1 {
 h2 {
   font-family: var(--font-heading);
   font-weight: 600;
-  font-size: var(--text-3xl);
+  font-size: var(--text-4xl);
   line-height: var(--leading-tight);
-  letter-spacing: var(--tracking-tight);
+  letter-spacing: var(--tracking-heading);
   color: var(--color-gray-900);
   margin-block-end: 0.5em;
 }
@@ -123,9 +124,9 @@ h2 {
 h3 {
   font-family: var(--font-heading);
   font-weight: 600;
-  font-size: var(--text-2xl);
+  font-size: var(--text-3xl);
   line-height: var(--leading-snug);
-  letter-spacing: var(--tracking-tight);
+  letter-spacing: var(--tracking-heading);
   color: var(--color-gray-900);
   margin-block-end: 0.5em;
 }
@@ -133,9 +134,9 @@ h3 {
 h4 {
   font-family: var(--font-heading);
   font-weight: 600;
-  font-size: var(--text-xl);
+  font-size: var(--text-2xl);
   line-height: var(--leading-snug);
-  letter-spacing: var(--tracking-tight);
+  letter-spacing: var(--tracking-heading);
   color: var(--color-gray-900);
   margin-block-end: 0.5em;
 }
@@ -779,7 +780,6 @@ h4 {
 .landing-footer h4 {
   font-family: var(--font-body);
   color: var(--color-navy-800);
-  font-size: var(--text-sm);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: var(--tracking-wide);
@@ -1089,9 +1089,7 @@ h4 {
 }
 
 .landing-hero h1 {
-  font-size: var(--text-5xl);
   line-height: var(--leading-none);
-  letter-spacing: var(--tracking-tight);
   max-width: 750px;
   margin: 0 auto 24px;
   color: var(--color-navy-800);
@@ -1131,7 +1129,7 @@ h4 {
   font-weight: 600;
   font-size: var(--text-6xl);
   line-height: var(--leading-none);
-  letter-spacing: var(--tracking-tight);
+  letter-spacing: var(--tracking-heading);
   color: var(--color-navy-800);
   margin-bottom: 8px;
 }
@@ -1180,8 +1178,6 @@ h4 {
 
 .measures-section h2 {
   color: white;
-  font-size: var(--text-4xl);
-  letter-spacing: var(--tracking-tight);
   max-width: 720px;
   margin: 0 auto 56px;
 }
@@ -1288,7 +1284,7 @@ h4 {
   font-weight: 600;
   font-size: var(--text-5xl);
   line-height: var(--leading-none);
-  letter-spacing: var(--tracking-tight);
+  letter-spacing: var(--tracking-heading);
   color: var(--color-navy-800);
   margin-bottom: 8px;
 }
@@ -1375,9 +1371,6 @@ h4 {
 
 .vision-section h2 {
   color: white;
-  font-size: var(--text-4xl);
-  line-height: var(--leading-tight);
-  letter-spacing: var(--tracking-tight);
   max-width: 800px;
 }
 
@@ -1407,11 +1400,6 @@ h4 {
 .problem-content {
   max-width: 800px;
   margin: 0 auto;
-}
-
-.problem-content h2 {
-  font-size: var(--text-4xl);
-  letter-spacing: var(--tracking-tight);
 }
 
 .problem-content p {
@@ -1453,8 +1441,6 @@ h4 {
 
 .product-intro-section h2 {
   color: white;
-  font-size: var(--text-4xl);
-  letter-spacing: var(--tracking-tight);
   max-width: 640px;
   margin: 0 auto 24px;
 }
@@ -1596,11 +1582,6 @@ h4 {
   grid-template-columns: 1fr 1fr;
   gap: 64px;
   align-items: center;
-}
-
-.market-text h2 {
-  font-size: var(--text-4xl);
-  letter-spacing: var(--tracking-tight);
 }
 
 .market-text p {
@@ -1843,7 +1824,7 @@ h4 {
   font-weight: 600;
   color: var(--color-gray-500);
   margin-bottom: 32px;
-  letter-spacing: var(--tracking-tight);
+  letter-spacing: var(--tracking-heading);
 }
 
 .advisors-grid {
@@ -1875,7 +1856,6 @@ h4 {
 }
 
 .advisor-info h4 {
-  font-size: var(--text-sm);
   margin-bottom: 2px;
 }
 
@@ -1937,8 +1917,6 @@ h4 {
 
 .cta-section h2 {
   color: white;
-  font-size: var(--text-4xl);
-  letter-spacing: var(--tracking-tight);
   margin-bottom: 16px;
 }
 
@@ -2071,9 +2049,6 @@ h4 {
 }
 
 .post-title {
-  font-size: var(--text-4xl);
-  line-height: var(--leading-tight);
-  letter-spacing: var(--tracking-tight);
   color: var(--color-navy-800);
   margin-bottom: 16px;
 }
@@ -2115,14 +2090,12 @@ h4 {
 }
 
 .prose h2 {
-  font-size: var(--text-3xl);
   margin-top: 48px;
   margin-bottom: 16px;
   color: var(--color-navy-800);
 }
 
 .prose h3 {
-  font-size: var(--text-xl);
   margin-top: 36px;
   margin-bottom: 12px;
   color: var(--color-navy-800);
@@ -2279,9 +2252,7 @@ h4 {
 }
 
 .product-hero h1 {
-  font-size: var(--text-5xl);
   line-height: var(--leading-none);
-  letter-spacing: var(--tracking-tight);
   max-width: 780px;
   margin: 0 auto 24px;
 }
@@ -2551,7 +2522,6 @@ h4 {
 
 .hiw-timeline-content h4 {
   color: white;
-  font-size: var(--text-xl);
   margin-bottom: 8px;
 }
 
@@ -2760,8 +2730,6 @@ h4 {
 
 .product-cta-section h2 {
   color: white;
-  font-size: var(--text-4xl);
-  letter-spacing: var(--tracking-tight);
   margin-bottom: 16px;
 }
 
@@ -2966,7 +2934,6 @@ h4 {
 
 
 .career-tile h3 {
-  font-size: var(--text-lg);
   color: var(--color-navy-800);
   margin-bottom: 8px;
 }
@@ -3052,7 +3019,6 @@ h4 {
 }
 
 .job-detail-header h1 {
-  font-size: var(--text-4xl);
   color: var(--color-navy-800);
   margin-bottom: 16px;
 }
@@ -3082,7 +3048,6 @@ h4 {
 }
 
 .job-detail-body h2 {
-  font-size: var(--text-xl);
   color: var(--color-navy-800);
   margin-top: 40px;
   margin-bottom: 16px;
@@ -3141,7 +3106,6 @@ h4 {
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
-  font-size: var(--text-xl);
   font-weight: 400;
   color: var(--color-gray-600);
   line-height: var(--leading-normal);
@@ -3256,48 +3220,6 @@ h4 {
 /* --- min-width: 768px (Tablet+) ----------------------------------------- */
 
 @media (min-width: 768px) {
-  /* Global typography scale-up */
-  h1 {
-    font-size: var(--text-5xl);
-    line-height: var(--leading-tight);
-  }
-
-  h2 {
-    font-size: var(--text-4xl);
-    line-height: var(--leading-tight);
-  }
-
-  h3 {
-    font-size: var(--text-3xl);
-  }
-
-  h4 {
-    font-size: var(--text-2xl);
-  }
-
-  /* Section heading overrides */
-  .landing-hero h1 {
-    font-size: var(--text-6xl);
-  }
-
-  .product-hero h1 {
-    font-size: var(--text-6xl);
-  }
-
-  .vision-section h2 {
-    font-size: var(--text-6xl);
-  }
-
-  .measures-section h2,
-  .problem-content h2,
-  .product-intro-section h2,
-  .market-text h2,
-  .cta-section h2,
-  .product-cta-section h2,
-  .post-title {
-    font-size: var(--text-5xl);
-  }
-
   /* Component scale-ups */
   .stat-number {
     font-size: var(--text-6xl);
@@ -3487,10 +3409,6 @@ h4 {
     padding-top: 100px;
   }
 
-  .landing-hero h1 {
-    font-size: var(--text-4xl);
-  }
-
   .hero-lead {
     font-size: var(--text-lg);
   }
@@ -3498,10 +3416,6 @@ h4 {
   /* Product page hero */
   .product-hero {
     padding: 120px 0 60px;
-  }
-
-  .product-hero h1 {
-    font-size: var(--text-4xl);
   }
 
   .hiw-timeline::before {
@@ -3519,17 +3433,8 @@ h4 {
   }
 
   /* Job detail */
-  .job-detail-header h1 {
-    font-size: var(--text-3xl);
-  }
-
   .job-detail-meta {
     gap: 12px;
-  }
-
-  /* Partners */
-  .partners-section h2 {
-    font-size: var(--text-lg);
   }
 
   /* Buttons */
