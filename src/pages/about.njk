@@ -20,7 +20,7 @@ permalink: /about/
 </section>
 
 <!-- Team -->
-<section class="deck-section-short team-section">
+<section class="deck-section-short team-section" id="team">
   <div class="container">
     <p class="eyebrow">Our Team</p>
     <h2 class="reveal">Meet the Founders</h2>
@@ -46,6 +46,23 @@ permalink: /about/
             <i class="ph-fill ph-linkedin-logo" aria-hidden="true"></i> LinkedIn
           </a>
         </div>
+      </div>
+    </div>
+
+    <!-- Advisors & Mentors -->
+    <div class="advisors-section">
+      <h3 class="advisors-heading reveal">Clinical Advisors & Mentors</h3>
+      <div class="advisors-grid">
+        {% for person in site.team.advisors %}
+        <div class="advisor-card reveal{% if loop.index > 1 %} reveal-delay-{{ loop.index0 }}{% endif %}">
+          <div class="advisor-avatar">{{ person.initials }}</div>
+          <div class="advisor-info">
+            <h4>{{ person.name }}</h4>
+            <p class="role">{{ person.role }}</p>
+            <p class="bio">{{ person.bio }}</p>
+          </div>
+        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
