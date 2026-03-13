@@ -127,60 +127,136 @@ eleventyExcludeFromCollections: true
   </section>
 
   <!-- ═══════════════════════════════════════════
-       2. TYPOGRAPHY
+       2. TYPE SCALE TOKENS
        ═══════════════════════════════════════════ -->
   <section class="ds-section">
-    <h2 class="ds-section-title">Typography</h2>
-    <p class="ds-section-desc">Heading font: TASA Explorer &nbsp;|&nbsp; Body font: Schibsted Grotesk</p>
+    <h2 class="ds-section-title">Type Scale Tokens</h2>
+    <p class="ds-section-desc">10-step type scale defined as CSS custom properties in the Tailwind v4 @theme block.</p>
 
-    <p class="ds-label">Headings (TASA Explorer)</p>
+    <p class="ds-label">Scale (--text-xs → --text-6xl)</p>
     <div style="margin-bottom: 32px;">
       <div class="ds-type-row">
-        <div class="ds-type-meta">h1 — 56px / font-heading / 700</div>
-        <h1 style="font-family: var(--font-heading); font-size: 56px; font-weight: 700; color: var(--color-navy-800); letter-spacing: -0.02em; line-height: 1.1;">The quick brown fox jumps</h1>
+        <div class="ds-type-meta">--text-xs: 12px — captions, tags, badges</div>
+        <p style="font-family: var(--font-body); font-size: var(--text-xs); color: var(--color-gray-600); margin: 0;">The quick brown fox jumps over the lazy dog</p>
       </div>
       <div class="ds-type-row">
-        <div class="ds-type-meta">h2 — 40px / font-heading / 700</div>
-        <h2 style="font-family: var(--font-heading); font-size: 40px; font-weight: 700; color: var(--color-navy-800); letter-spacing: -0.01em; line-height: 1.15;">The quick brown fox jumps over</h2>
+        <div class="ds-type-meta">--text-sm: 14px — card body, footer, eyebrow, nav</div>
+        <p style="font-family: var(--font-body); font-size: var(--text-sm); color: var(--color-gray-600); margin: 0;">The quick brown fox jumps over the lazy dog</p>
       </div>
       <div class="ds-type-row">
-        <div class="ds-type-meta">h3 — 28px / font-heading / 600</div>
-        <h3 style="font-family: var(--font-heading); font-size: 28px; font-weight: 600; color: var(--color-navy-800); line-height: 1.2;">The quick brown fox jumps over the lazy dog</h3>
+        <div class="ds-type-meta">--text-base: 16px — body, buttons, nav</div>
+        <p style="font-family: var(--font-body); font-size: var(--text-base); color: var(--color-gray-600); margin: 0;">The quick brown fox jumps over the lazy dog</p>
       </div>
       <div class="ds-type-row">
-        <div class="ds-type-meta">h4 — 22px / font-heading / 600</div>
-        <h4 style="font-family: var(--font-heading); font-size: 22px; font-weight: 600; color: var(--color-navy-800); line-height: 1.3;">The quick brown fox jumps over the lazy dog</h4>
+        <div class="ds-type-meta">--text-lg: 18px — section leads, sub-headings</div>
+        <p style="font-family: var(--font-body); font-size: var(--text-lg); color: var(--color-gray-600); margin: 0;">The quick brown fox jumps over the lazy dog</p>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">--text-xl: 20px — h4, card titles</div>
+        <p style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 600; color: var(--color-navy-800); margin: 0;">The quick brown fox jumps over the lazy dog</p>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">--text-2xl: 24px — h3</div>
+        <p style="font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 600; color: var(--color-navy-800); margin: 0;">The quick brown fox jumps over</p>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">--text-3xl: 30px — h2 mobile</div>
+        <p style="font-family: var(--font-heading); font-size: var(--text-3xl); font-weight: 600; color: var(--color-navy-800); margin: 0;">The quick brown fox jumps</p>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">--text-4xl: 36px — h2 desktop / h1 mobile</div>
+        <p style="font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: 600; color: var(--color-navy-800); margin: 0; letter-spacing: var(--tracking-tight);">The quick brown fox</p>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">--text-5xl: 48px — h1 desktop</div>
+        <p style="font-family: var(--font-heading); font-size: var(--text-5xl); font-weight: 600; color: var(--color-navy-800); margin: 0; letter-spacing: var(--tracking-tight); line-height: var(--leading-none);">The quick brown</p>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">--text-6xl: 60px — display, stat numbers</div>
+        <p style="font-family: var(--font-heading); font-size: var(--text-6xl); font-weight: 600; color: var(--color-navy-800); margin: 0; letter-spacing: var(--tracking-tight); line-height: var(--leading-none);">310M</p>
       </div>
     </div>
 
-    <p class="ds-label">Body (Schibsted Grotesk)</p>
+    <p class="ds-label">Tracking (Letter Spacing)</p>
     <div style="margin-bottom: 32px;">
       <div class="ds-type-row">
-        <div class="ds-type-meta">body-lg — 18px / 400 / 1.7</div>
-        <p style="font-family: var(--font-body); font-size: 18px; font-weight: 400; line-height: 1.7; color: #4b5563; max-width: 640px;">Continuous monitoring of urine output, color, turbidity, and hematuria for catheterized patients. Providing healthcare providers with timely data to support clinical assessment.</p>
+        <div class="ds-type-meta">--tracking-tight: -0.02em — headings, display</div>
+        <p style="font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 600; color: var(--color-navy-800); letter-spacing: var(--tracking-tight); margin: 0;">Tight tracking for headings</p>
       </div>
       <div class="ds-type-row">
-        <div class="ds-type-meta">body — 16px / 400 / 1.6</div>
-        <p style="font-family: var(--font-body); font-size: 16px; font-weight: 400; line-height: 1.6; color: #4b5563; max-width: 640px;">Continuous monitoring of urine output, color, turbidity, and hematuria for catheterized patients. Providing healthcare providers with timely data.</p>
+        <div class="ds-type-meta">--tracking-normal: 0 — body text</div>
+        <p style="font-family: var(--font-body); font-size: var(--text-base); color: var(--color-gray-600); letter-spacing: var(--tracking-normal); margin: 0;">Normal tracking for body text</p>
       </div>
       <div class="ds-type-row">
-        <div class="ds-type-meta">body-sm — 14px / 400 / 1.5</div>
-        <p style="font-family: var(--font-body); font-size: 14px; font-weight: 400; line-height: 1.5; color: #6b7280;">Continuous monitoring of urine output, color, turbidity, and hematuria for catheterized patients.</p>
+        <div class="ds-type-meta">--tracking-wide: 0.05em — eyebrows, labels, uppercase</div>
+        <p style="font-family: var(--font-body); font-size: var(--text-sm); font-weight: 600; color: var(--color-teal-600); letter-spacing: var(--tracking-wide); text-transform: uppercase; margin: 0;">Wide tracking for labels</p>
+      </div>
+    </div>
+
+    <p class="ds-label">Leading (Line Height)</p>
+    <div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">--leading-none: 1 — stat numbers, display</div>
+        <p style="font-family: var(--font-heading); font-size: var(--text-5xl); font-weight: 600; color: var(--color-navy-800); line-height: var(--leading-none); margin: 0;">90%</p>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">--leading-tight: 1.15 — large headings</div>
+        <p style="font-family: var(--font-heading); font-size: var(--text-3xl); font-weight: 600; color: var(--color-navy-800); line-height: var(--leading-tight); margin: 0;">Real-time monitoring for<br>catheterized patients</p>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">--leading-snug: 1.35 — small headings, cards</div>
+        <p style="font-family: var(--font-body); font-size: var(--text-lg); color: var(--color-gray-600); line-height: var(--leading-snug); margin: 0; max-width: 600px;">Hardware + AI + Software in one integrated solution for early kidney injury detection.</p>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">--leading-normal: 1.6 — body text</div>
+        <p style="font-family: var(--font-body); font-size: var(--text-base); color: var(--color-gray-600); line-height: var(--leading-normal); margin: 0; max-width: 600px;">Continuous monitoring of urine output, color, turbidity, and hematuria for catheterized patients. Providing healthcare providers with timely data to support clinical assessment.</p>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">--leading-relaxed: 1.75 — prose, long-form</div>
+        <p style="font-family: var(--font-body); font-size: var(--text-base); color: var(--color-gray-600); line-height: var(--leading-relaxed); margin: 0; max-width: 600px;">Continuous monitoring of urine output, color, turbidity, and hematuria for catheterized patients. Providing healthcare providers with timely data to support clinical assessment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       2b. TYPOGRAPHY ELEMENTS
+       ═══════════════════════════════════════════ -->
+  <section class="ds-section">
+    <h2 class="ds-section-title">Typography Elements</h2>
+    <p class="ds-section-desc">Heading font: TASA Explorer &nbsp;|&nbsp; Body font: Schibsted Grotesk</p>
+
+    <p class="ds-label">Headings (use type-scale tokens)</p>
+    <div style="margin-bottom: 32px;">
+      <div class="ds-type-row">
+        <div class="ds-type-meta">h1 — text-4xl (36px mobile) → text-5xl (48px desktop)</div>
+        <h1 style="font-size: var(--text-5xl); line-height: var(--leading-none); margin: 0;">The quick brown fox jumps</h1>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">h2 — text-3xl (30px mobile) → text-4xl (36px desktop)</div>
+        <h2 style="margin: 0;">The quick brown fox jumps over</h2>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">h3 — text-2xl (24px)</div>
+        <h3 style="margin: 0;">The quick brown fox jumps over the lazy dog</h3>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">h4 — text-xl (20px)</div>
+        <h4 style="margin: 0;">The quick brown fox jumps over the lazy dog</h4>
       </div>
     </div>
 
     <p class="ds-label">Special Styles</p>
     <div>
       <div class="ds-type-row">
-        <div class="ds-type-meta">.eyebrow — 13px / 600 / uppercase / teal-600</div>
+        <div class="ds-type-meta">.eyebrow — text-sm / 600 / tracking-wide / teal-600</div>
         <p class="eyebrow">Advanced Urine Parameter Monitoring</p>
       </div>
       <div class="ds-type-row">
-        <div class="ds-type-meta">.eyebrow-teal — teal-400 variant</div>
+        <div class="ds-type-meta">.eyebrow-teal — teal-400 variant (for dark backgrounds)</div>
         <p class="eyebrow eyebrow-teal">Our Mission</p>
       </div>
       <div class="ds-type-row">
-        <div class="ds-type-meta">.section-description — 18px / gray-600</div>
+        <div class="ds-type-meta">.section-description — text-lg / gray-600 / centered</div>
         <p class="section-description" style="margin: 0;">Hardware + AI + Software in one integrated solution for early kidney injury detection.</p>
       </div>
     </div>
@@ -246,65 +322,109 @@ eleventyExcludeFromCollections: true
   </section>
 
   <!-- ═══════════════════════════════════════════
-       5. CARDS
+       5. CARD UTILITY SYSTEM
        ═══════════════════════════════════════════ -->
   <section class="ds-section">
-    <h2 class="ds-section-title">Cards</h2>
-    <p class="ds-section-desc">Card patterns used across the site for content, stats, and features.</p>
+    <h2 class="ds-section-title">Card Utility System</h2>
+    <p class="ds-section-desc">Composable card utilities: base + theme + padding + hover. Combine classes to build any card variant.</p>
 
-    <p class="ds-label">Stat Cards</p>
+    <p class="ds-label">Themes: .card-light / .card-white / .card-glass / .card-dark</p>
     <div class="ds-preview">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; text-align: center;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+        <div class="card card-light card-md">
+          <h4 style="margin: 0 0 4px;">.card-light</h4>
+          <p style="font-size: var(--text-sm); margin: 0;">gray-50 background</p>
+        </div>
+        <div class="card card-white card-md">
+          <h4 style="margin: 0 0 4px;">.card-white</h4>
+          <p style="font-size: var(--text-sm); margin: 0;">white + border</p>
+        </div>
+        <div class="card card-dark card-md">
+          <h4 style="margin: 0 0 4px; color: white;">.card-dark</h4>
+          <p style="font-size: var(--text-sm); margin: 0; color: rgba(255,255,255,0.7);">navy gradient + white text</p>
+        </div>
+      </div>
+    </div>
+    <div class="ds-dark-strip" style="margin-top: 8px;">
+      <div class="card card-glass card-md" style="max-width: 240px;">
+        <h4 style="margin: 0 0 4px; color: white;">.card-glass</h4>
+        <p style="font-size: var(--text-sm); margin: 0; color: rgba(255,255,255,0.7);">translucent white (for dark bg)</p>
+      </div>
+    </div>
+
+    <p class="ds-label" style="margin-top: 32px;">Padding: .card-sm / .card-md / .card-lg</p>
+    <div class="ds-preview">
+      <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start;">
+        <div class="card card-light card-sm" style="min-width: 140px;">
+          <div class="ds-type-meta">.card-sm (24px)</div>
+        </div>
+        <div class="card card-light card-md" style="min-width: 160px;">
+          <div class="ds-type-meta">.card-md (32px)</div>
+        </div>
+        <div class="card card-light card-lg" style="min-width: 180px;">
+          <div class="ds-type-meta">.card-lg (48px)</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="ds-label" style="margin-top: 32px;">Hover: .card-hoverable</p>
+    <div class="ds-preview">
+      <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <div class="card card-light card-md card-hoverable" style="min-width: 200px; cursor: pointer;">
+          <h4 style="margin: 0 0 4px;">Hover me</h4>
+          <p style="font-size: var(--text-sm); margin: 0;">translateY(-2px) + shadow</p>
+        </div>
+        <div class="card card-white card-md card-hoverable" style="min-width: 200px; cursor: pointer;">
+          <h4 style="margin: 0 0 4px;">Hover me too</h4>
+          <p style="font-size: var(--text-sm); margin: 0;">Works with any theme</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="ds-label" style="margin-top: 32px;">Icon Sizes: .card-icon-sm / .card-icon-md / .card-icon-lg</p>
+    <div class="ds-preview">
+      <div style="display: flex; gap: 24px; align-items: flex-start;">
+        <div style="text-align: center;">
+          <div class="card-icon card-icon-sm" style="background: var(--color-teal-50); color: var(--color-teal-600);">
+            <i class="ph-fill ph-drop"></i>
+          </div>
+          <div class="ds-type-meta">.card-icon-sm<br>40×40</div>
+        </div>
+        <div style="text-align: center;">
+          <div class="card-icon card-icon-md" style="background: var(--color-teal-50); color: var(--color-teal-600);">
+            <i class="ph-fill ph-brain"></i>
+          </div>
+          <div class="ds-type-meta">.card-icon-md<br>48×48</div>
+        </div>
+        <div style="text-align: center;">
+          <div class="card-icon card-icon-lg" style="background: var(--color-teal-50); color: var(--color-teal-600);">
+            <i class="ph-fill ph-heartbeat"></i>
+          </div>
+          <div class="ds-type-meta">.card-icon-lg<br>56×56</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="ds-label" style="margin-top: 32px;">Composed Examples</p>
+    <div class="ds-preview">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
         <div class="card card-light card-md stat-card">
           <div class="stat-number"><span class="count" data-target="310">310</span><span class="count-suffix">M</span></div>
           <p class="stat-label">surgeries performed annually worldwide</p>
+          <div class="ds-type-meta" style="margin-top: 8px;">.card .card-light .card-md .stat-card</div>
         </div>
-        <div class="card card-light card-md stat-card">
-          <div class="stat-number">Up to 25%</div>
-          <p class="stat-label">of surgeries result in ICU admission</p>
+        <div class="card card-light card-md card-hoverable">
+          <div class="card-icon card-icon-lg" style="background: var(--color-teal-50); color: var(--color-teal-600);">
+            <i class="ph-fill ph-drop"></i>
+          </div>
+          <h4>Feature Card</h4>
+          <p style="font-size: var(--text-sm);">Composable card with icon, theme, padding, and hover.</p>
+          <div class="ds-type-meta">.card .card-light .card-md .card-hoverable</div>
         </div>
-        <div class="card card-light card-md stat-card">
-          <div class="stat-number"><span class="count" data-target="90">90</span><span class="count-suffix">%</span></div>
-          <p class="stat-label">of ICU patients are catheterised</p>
-        </div>
-      </div>
-    </div>
-
-    <p class="ds-label">Problem Highlight Cards</p>
-    <div class="ds-preview">
-      <div class="problem-highlight" style="margin: 0;">
-        <div class="problem-highlight-item">
-          <i class="ph-fill ph-warning-circle" style="font-size: 24px; color: #DC2626;"></i>
-          <h4>Manual Measurement</h4>
-          <p>Hourly readings by hand. Subjective, inconsistent, and takes nurses away from critical care.</p>
-        </div>
-        <div class="problem-highlight-item">
-          <i class="ph-fill ph-clock-countdown" style="font-size: 24px; color: #DC2626;"></i>
-          <h4>Late Detection</h4>
-          <p>Creatinine-based diagnosis catches AKI hours or days after damage has already begun.</p>
-        </div>
-        <div class="problem-highlight-item">
-          <i class="ph-fill ph-heartbeat" style="font-size: 24px; color: #DC2626;"></i>
-          <h4>Preventable Deaths</h4>
-          <p>Earlier detection — even by hours — dramatically improves outcomes and reduces mortality.</p>
-        </div>
-      </div>
-    </div>
-
-    <p class="ds-label">Partner Cards</p>
-    <div class="ds-preview">
-      <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-        <div class="card card-white card-md partner-card">
-          <img src="/assets/birac.jpg" alt="BIRAC" class="partner-logo">
-          <span class="partner-name">BIRAC</span>
-        </div>
-        <div class="card card-white card-md partner-card">
-          <img src="/assets/ccamp.jpg" alt="C-CAMP" class="partner-logo">
-          <span class="partner-name">C-CAMP</span>
-        </div>
-        <div class="card card-white card-md partner-card">
-          <img src="/assets/dpiit.jpg" alt="DPIIT" class="partner-logo">
-          <span class="partner-name">DPIIT</span>
+        <div class="card card-white card-md">
+          <img src="/assets/birac.jpg" alt="BIRAC" class="partner-logo" style="max-height: 48px; margin-bottom: 8px;">
+          <span style="font-weight: 600; font-size: var(--text-sm); color: var(--color-gray-700);">Partner Card</span>
+          <div class="ds-type-meta" style="margin-top: 8px;">.card .card-white .card-md</div>
         </div>
       </div>
     </div>
