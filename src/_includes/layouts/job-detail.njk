@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+---
+<article class="job-detail">
+  <div class="container">
+    <header class="job-detail-header">
+      <a href="/careers/" class="job-back-link">
+        <i class="ph-fill ph-arrow-left" aria-hidden="true"></i>
+        All positions
+      </a>
+      <h1>{{ title }}</h1>
+      <div class="job-detail-meta">
+        <span><i class="ph-fill ph-map-pin" aria-hidden="true"></i> {{ location }}</span>
+        <span><i class="ph-fill ph-clock" aria-hidden="true"></i> {{ type }}</span>
+      </div>
+    </header>
+
+    <div class="job-detail-body prose">
+      {{ content | safe }}
+    </div>
+
+    <footer class="job-detail-footer">
+      <a href="mailto:{{ site.email }}?subject=Application%3A%20{{ title | urlencode }}" class="button button-primary">
+        <i class="ph-fill ph-paper-plane-tilt" aria-hidden="true"></i>
+        Apply for this role
+      </a>
+      <p class="job-detail-footer-note">
+        Send your resume and a brief note about why you're interested to <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </p>
+    </footer>
+  </div>
+</article>

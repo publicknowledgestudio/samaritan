@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/job-detail.njk",
+  "tags": ["job"],
+  "permalink": "/careers/{{ page.fileSlug }}/"
+}

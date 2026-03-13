@@ -30,7 +30,7 @@
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=TASA+Explorer:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css">
 
   <!-- Styles -->
@@ -45,14 +45,13 @@
 
   <!-- Navigation -->
   <nav class="landing-nav">
-    <a href="/" class="nav-brand">samaritan<span>.bio</span></a>
+    <a href="/" class="nav-brand"><img src="/assets/samaritan-logo-wordmark-black.svg" alt="samaritan.bio" class="nav-logo"></a>
     <div class="nav-links">
       <a href="/"{% if page.url == "/" %} class="active"{% endif %}>Company</a>
       <a href="/about/"{% if page.url == "/about/" %} class="active"{% endif %}>About</a>
       <a href="/arobag/"{% if page.url == "/arobag/" %} class="active"{% endif %}>AroBag</a>
       <a href="/blog/"{% if page.url.startsWith("/blog/") %} class="active"{% endif %}>Blog</a>
-      <a href="/#team">Team</a>
-      <a href="/careers/"{% if page.url == "/careers/" %} class="active"{% endif %}>Careers</a>
+      <a href="/about/#careers">Careers</a>
       <a href="/#contact">Contact</a>
     </div>
     <a href="/#contact" class="nav-cta">Get in Touch</a>
@@ -79,8 +78,7 @@
       <a href="/about/"{% if page.url == "/about/" %} class="active"{% endif %}>About</a>
       <a href="/arobag/"{% if page.url == "/arobag/" %} class="active"{% endif %}>AroBag</a>
       <a href="/blog/"{% if page.url.startsWith("/blog/") %} class="active"{% endif %}>Blog</a>
-      <a href="/#team">Team</a>
-      <a href="/careers/"{% if page.url == "/careers/" %} class="active"{% endif %}>Careers</a>
+      <a href="/about/#careers">Careers</a>
       <a href="/#contact">Contact</a>
     </div>
     <a href="/#contact" class="mobile-nav-cta">Get in Touch</a>
@@ -96,7 +94,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand-col">
-          <a href="/" class="footer-brand">samaritan<span>.bio</span></a>
+          <a href="/" class="footer-brand"><img src="/assets/samaritan-logo-wordmark-black.svg" alt="samaritan.bio" class="footer-logo"></a>
           <p>Pioneering automated urine analysis systems for early detection of AKI and improved patient outcomes in critical care environments.</p>
           <div class="footer-contact">
             <a href="mailto:{{ site.email }}"><i class="ph-fill ph-envelope-simple" aria-hidden="true"></i> {{ site.email }}</a>
@@ -117,7 +115,7 @@
             <li><a href="/">About Us</a></li>
             <li><a href="/#team">Our Team</a></li>
             <li><a href="/#contact">Contact</a></li>
-            <li><a href="/careers/">Careers</a></li>
+            <li><a href="/about/#careers">Careers</a></li>
           </ul>
         </div>
         <div>

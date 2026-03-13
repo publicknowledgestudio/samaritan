@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "eleventy",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["@11ty/eleventy", "--serve"],
+      "port": 8080,
+      "autoPort": true
+    },
+    {
+      "name": "tailwind",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["@tailwindcss/cli", "-i", "src/css/main.css", "-o", "_site/css/main.css", "--watch"],
+      "port": 0
+    }
+  ]
+}

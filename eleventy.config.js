@@ -28,6 +28,12 @@ export default function (eleventyConfig) {
       .sort((a, b) => b.date - a.date);
   });
 
+  // Jobs collection (active positions only)
+  eleventyConfig.addCollection("jobs", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/jobs/*.md")
+      .filter(job => job.data.active !== false);
+  });
+
   // Reading time filter
   eleventyConfig.addFilter("readingTime", (content) => {
     const wordsPerMinute = 200;

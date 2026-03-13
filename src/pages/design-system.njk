@@ -1,0 +1,407 @@
+---
+layout: layouts/base.njk
+title: Design System
+description: Internal design system reference for Samaritan Bio
+permalink: /design-system/
+eleventyExcludeFromCollections: true
+---
+
+<style>
+  .ds-page { max-width: 1120px; margin: 0 auto; padding: 64px 24px 120px; }
+  .ds-header { border-bottom: 2px solid var(--color-navy-100); padding-bottom: 32px; margin-bottom: 64px; }
+  .ds-title { font-family: var(--font-heading); font-size: 48px; color: var(--color-navy-800); margin-bottom: 8px; }
+  .ds-subtitle { font-family: var(--font-body); font-size: 16px; color: #6b7280; margin: 0; }
+  .ds-section { margin-bottom: 80px; }
+  .ds-section-title { font-family: var(--font-heading); font-size: 28px; color: var(--color-navy-800); margin-bottom: 4px; }
+  .ds-section-desc { font-family: var(--font-body); font-size: 14px; color: #6b7280; margin-bottom: 28px; }
+  .ds-label { font-family: var(--font-body); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #9ca3af; margin-bottom: 8px; }
+  .ds-row { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }
+  .ds-col { flex: 1; min-width: 260px; }
+
+  /* Swatch grid */
+  .ds-swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(88px, 1fr)); gap: 12px; }
+  .ds-swatch { border-radius: 10px; overflow: hidden; border: 1px solid #e5e7eb; }
+  .ds-swatch-color { height: 56px; }
+  .ds-swatch-info { padding: 6px 8px; background: white; }
+  .ds-swatch-name { font-size: 11px; font-weight: 600; color: #374151; }
+  .ds-swatch-hex { font-size: 10px; color: #9ca3af; font-family: monospace; }
+
+  /* Type specimens */
+  .ds-type-row { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #f3f4f6; }
+  .ds-type-row:last-child { border-bottom: none; }
+  .ds-type-meta { font-size: 11px; color: #9ca3af; font-family: monospace; margin-bottom: 4px; }
+
+  /* Button showcase */
+  .ds-btn-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 16px; }
+
+  /* Card grid */
+  .ds-card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+
+  /* Spacing scale */
+  .ds-spacing-item { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  .ds-spacing-bar { background: var(--color-teal-400); height: 16px; border-radius: 4px; }
+  .ds-spacing-label { font-size: 12px; font-family: monospace; color: #6b7280; white-space: nowrap; min-width: 100px; }
+
+  /* Icon grid */
+  .ds-icon-grid { display: flex; flex-wrap: wrap; gap: 20px; }
+  .ds-icon-item { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 16px; border-radius: 10px; border: 1px solid #e5e7eb; min-width: 80px; }
+  .ds-icon-item i { font-size: 24px; color: var(--color-navy-800); }
+  .ds-icon-item span { font-size: 10px; color: #9ca3af; }
+
+  /* Dark preview strip */
+  .ds-dark-strip { background: var(--color-navy-800); padding: 32px; border-radius: 12px; margin-top: 16px; }
+
+  /* Component preview box */
+  .ds-preview { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 12px; padding: 32px; margin-bottom: 16px; }
+  .ds-preview-dark { background: var(--color-navy-800); border-color: var(--color-navy-700); }
+</style>
+
+<div class="ds-page">
+
+  <!-- Header -->
+  <div class="ds-header">
+    <h1 class="ds-title">Design System</h1>
+    <p class="ds-subtitle">Samaritan Bio — internal reference for colors, typography, components, and patterns.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       1. COLORS
+       ═══════════════════════════════════════════ -->
+  <section class="ds-section">
+    <h2 class="ds-section-title">Colors</h2>
+    <p class="ds-section-desc">Brand color palette defined as CSS custom properties in the Tailwind v4 theme.</p>
+
+    <p class="ds-label">Navy (Primary Brand)</p>
+    <div class="ds-swatches" style="margin-bottom: 24px;">
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-950);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">950</div><div class="ds-swatch-hex">#0A0A1A</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-900);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">900</div><div class="ds-swatch-hex">#12122B</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-800);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">800</div><div class="ds-swatch-hex">#1C1C40</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-700);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">700</div><div class="ds-swatch-hex">#272758</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-600);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">600</div><div class="ds-swatch-hex">#333370</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-500);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">500</div><div class="ds-swatch-hex">#4A4A8A</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-400);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">400</div><div class="ds-swatch-hex">#6868A5</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-300);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">300</div><div class="ds-swatch-hex">#8E8EBF</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-200);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">200</div><div class="ds-swatch-hex">#B8B8D9</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-100);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">100</div><div class="ds-swatch-hex">#DCDCEC</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-50);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">50</div><div class="ds-swatch-hex">#EDEDF5</div></div></div>
+    </div>
+
+    <p class="ds-label">Teal (Accent)</p>
+    <div class="ds-swatches" style="margin-bottom: 24px;">
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-teal-700);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">700</div><div class="ds-swatch-hex">#0F766E</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-teal-600);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">600</div><div class="ds-swatch-hex">#0D9488</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-teal-500);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">500</div><div class="ds-swatch-hex">#14B8A6</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-teal-400);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">400</div><div class="ds-swatch-hex">#2DD4BF</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-teal-300);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">300</div><div class="ds-swatch-hex">#5EEAD4</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-teal-200);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">200</div><div class="ds-swatch-hex">#99F6E4</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-teal-100);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">100</div><div class="ds-swatch-hex">#CCFBF1</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-teal-50);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">50</div><div class="ds-swatch-hex">#F0FDFA</div></div></div>
+    </div>
+
+    <p class="ds-label">Grays (Tailwind defaults)</p>
+    <div class="ds-swatches">
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: #111827;"></div><div class="ds-swatch-info"><div class="ds-swatch-name">900</div><div class="ds-swatch-hex">#111827</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: #1f2937;"></div><div class="ds-swatch-info"><div class="ds-swatch-name">800</div><div class="ds-swatch-hex">#1F2937</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: #374151;"></div><div class="ds-swatch-info"><div class="ds-swatch-name">700</div><div class="ds-swatch-hex">#374151</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: #4b5563;"></div><div class="ds-swatch-info"><div class="ds-swatch-name">600</div><div class="ds-swatch-hex">#4B5563</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: #6b7280;"></div><div class="ds-swatch-info"><div class="ds-swatch-name">500</div><div class="ds-swatch-hex">#6B7280</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: #9ca3af;"></div><div class="ds-swatch-info"><div class="ds-swatch-name">400</div><div class="ds-swatch-hex">#9CA3AF</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: #d1d5db;"></div><div class="ds-swatch-info"><div class="ds-swatch-name">300</div><div class="ds-swatch-hex">#D1D5DB</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: #e5e7eb;"></div><div class="ds-swatch-info"><div class="ds-swatch-name">200</div><div class="ds-swatch-hex">#E5E7EB</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: #f3f4f6;"></div><div class="ds-swatch-info"><div class="ds-swatch-name">100</div><div class="ds-swatch-hex">#F3F4F6</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: #f9fafb;"></div><div class="ds-swatch-info"><div class="ds-swatch-name">50</div><div class="ds-swatch-hex">#F9FAFB</div></div></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       2. TYPOGRAPHY
+       ═══════════════════════════════════════════ -->
+  <section class="ds-section">
+    <h2 class="ds-section-title">Typography</h2>
+    <p class="ds-section-desc">Heading font: TASA Explorer &nbsp;|&nbsp; Body font: Schibsted Grotesk</p>
+
+    <p class="ds-label">Headings (TASA Explorer)</p>
+    <div style="margin-bottom: 32px;">
+      <div class="ds-type-row">
+        <div class="ds-type-meta">h1 — 56px / font-heading / 700</div>
+        <h1 style="font-family: var(--font-heading); font-size: 56px; font-weight: 700; color: var(--color-navy-800); letter-spacing: -0.02em; line-height: 1.1;">The quick brown fox jumps</h1>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">h2 — 40px / font-heading / 700</div>
+        <h2 style="font-family: var(--font-heading); font-size: 40px; font-weight: 700; color: var(--color-navy-800); letter-spacing: -0.01em; line-height: 1.15;">The quick brown fox jumps over</h2>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">h3 — 28px / font-heading / 600</div>
+        <h3 style="font-family: var(--font-heading); font-size: 28px; font-weight: 600; color: var(--color-navy-800); line-height: 1.2;">The quick brown fox jumps over the lazy dog</h3>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">h4 — 22px / font-heading / 600</div>
+        <h4 style="font-family: var(--font-heading); font-size: 22px; font-weight: 600; color: var(--color-navy-800); line-height: 1.3;">The quick brown fox jumps over the lazy dog</h4>
+      </div>
+    </div>
+
+    <p class="ds-label">Body (Schibsted Grotesk)</p>
+    <div style="margin-bottom: 32px;">
+      <div class="ds-type-row">
+        <div class="ds-type-meta">body-lg — 18px / 400 / 1.7</div>
+        <p style="font-family: var(--font-body); font-size: 18px; font-weight: 400; line-height: 1.7; color: #4b5563; max-width: 640px;">Continuous monitoring of urine output, color, turbidity, and hematuria for catheterized patients. Providing healthcare providers with timely data to support clinical assessment.</p>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">body — 16px / 400 / 1.6</div>
+        <p style="font-family: var(--font-body); font-size: 16px; font-weight: 400; line-height: 1.6; color: #4b5563; max-width: 640px;">Continuous monitoring of urine output, color, turbidity, and hematuria for catheterized patients. Providing healthcare providers with timely data.</p>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">body-sm — 14px / 400 / 1.5</div>
+        <p style="font-family: var(--font-body); font-size: 14px; font-weight: 400; line-height: 1.5; color: #6b7280;">Continuous monitoring of urine output, color, turbidity, and hematuria for catheterized patients.</p>
+      </div>
+    </div>
+
+    <p class="ds-label">Special Styles</p>
+    <div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">.eyebrow — 13px / 600 / uppercase / teal-600</div>
+        <p class="eyebrow">Advanced Urine Parameter Monitoring</p>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">.eyebrow-teal — teal-400 variant</div>
+        <p class="eyebrow eyebrow-teal">Our Mission</p>
+      </div>
+      <div class="ds-type-row">
+        <div class="ds-type-meta">.section-description — 18px / gray-600</div>
+        <p class="section-description" style="margin: 0;">Hardware + AI + Software in one integrated solution for early kidney injury detection.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       3. BUTTONS
+       ═══════════════════════════════════════════ -->
+  <section class="ds-section">
+    <h2 class="ds-section-title">Buttons</h2>
+    <p class="ds-section-desc">All interactive button variants used across the site.</p>
+
+    <p class="ds-label">Primary (Navy)</p>
+    <div class="ds-btn-row">
+      <a href="#" class="btn-primary">Request Demo</a>
+      <a href="#" class="btn-primary" style="font-size: 14px; padding: 10px 24px;">Small Primary</a>
+    </div>
+
+    <p class="ds-label">Outline Navy</p>
+    <div class="ds-btn-row">
+      <a href="#" class="btn-outline-navy">Learn More</a>
+    </div>
+
+    <p class="ds-label">On Dark Background</p>
+    <div class="ds-dark-strip">
+      <div class="ds-btn-row" style="margin-bottom: 12px;">
+        <a href="#" class="btn-white">Get in Touch</a>
+      </div>
+      <div class="ds-btn-row" style="margin: 0;">
+        <a href="#" class="btn-outline-white">View Open Roles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       4. FORM INPUTS
+       ═══════════════════════════════════════════ -->
+  <section class="ds-section">
+    <h2 class="ds-section-title">Form Inputs</h2>
+    <p class="ds-section-desc">Input styles used in the footer subscribe form and potential contact forms.</p>
+
+    <div style="max-width: 480px;">
+      <p class="ds-label">Text Input</p>
+      <input type="text" placeholder="Your email address" style="width: 100%; padding: 12px 16px; border: 1px solid #d1d5db; border-radius: 8px; font-family: var(--font-body); font-size: 15px; color: #374151; background: white; margin-bottom: 16px; outline: none;">
+
+      <p class="ds-label">Textarea</p>
+      <textarea placeholder="Tell us about your needs..." rows="3" style="width: 100%; padding: 12px 16px; border: 1px solid #d1d5db; border-radius: 8px; font-family: var(--font-body); font-size: 15px; color: #374151; background: white; margin-bottom: 16px; outline: none; resize: vertical;"></textarea>
+
+      <p class="ds-label">Select</p>
+      <select style="width: 100%; padding: 12px 16px; border: 1px solid #d1d5db; border-radius: 8px; font-family: var(--font-body); font-size: 15px; color: #374151; background: white; margin-bottom: 16px; outline: none;">
+        <option>Select a topic</option>
+        <option>Product Demo</option>
+        <option>Partnership</option>
+        <option>Investment</option>
+      </select>
+
+      <p class="ds-label">Footer Subscribe Pattern</p>
+      <div style="display: flex; gap: 0; max-width: 400px;">
+        <input type="email" placeholder="Enter your email" style="flex: 1; padding: 10px 16px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px 0 0 8px; font-family: var(--font-body); font-size: 14px; color: white; background: rgba(255,255,255,0.08); outline: none;" class="ds-dark-strip">
+        <button style="padding: 10px 20px; background: var(--color-teal-500); color: white; border: none; border-radius: 0 8px 8px 0; font-family: var(--font-body); font-size: 14px; font-weight: 600; cursor: pointer;">Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       5. CARDS
+       ═══════════════════════════════════════════ -->
+  <section class="ds-section">
+    <h2 class="ds-section-title">Cards</h2>
+    <p class="ds-section-desc">Card patterns used across the site for content, stats, and features.</p>
+
+    <p class="ds-label">Stat Cards</p>
+    <div class="ds-preview">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; text-align: center;">
+        <div class="stat-card">
+          <div class="stat-number"><span class="count" data-target="310">310</span><span class="count-suffix">M</span></div>
+          <p class="stat-label">surgeries performed annually worldwide</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">Up to 25%</div>
+          <p class="stat-label">of surgeries result in ICU admission</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number"><span class="count" data-target="90">90</span><span class="count-suffix">%</span></div>
+          <p class="stat-label">of ICU patients are catheterised</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="ds-label">Problem Highlight Cards</p>
+    <div class="ds-preview">
+      <div class="problem-highlight" style="margin: 0;">
+        <div class="problem-highlight-item">
+          <i class="ph-fill ph-warning-circle" style="font-size: 24px; color: #DC2626;"></i>
+          <h4>Manual Measurement</h4>
+          <p>Hourly readings by hand. Subjective, inconsistent, and takes nurses away from critical care.</p>
+        </div>
+        <div class="problem-highlight-item">
+          <i class="ph-fill ph-clock-countdown" style="font-size: 24px; color: #DC2626;"></i>
+          <h4>Late Detection</h4>
+          <p>Creatinine-based diagnosis catches AKI hours or days after damage has already begun.</p>
+        </div>
+        <div class="problem-highlight-item">
+          <i class="ph-fill ph-heartbeat" style="font-size: 24px; color: #DC2626;"></i>
+          <h4>Preventable Deaths</h4>
+          <p>Earlier detection — even by hours — dramatically improves outcomes and reduces mortality.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="ds-label">Partner Cards</p>
+    <div class="ds-preview">
+      <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div class="partner-card">
+          <img src="/assets/birac.jpg" alt="BIRAC" class="partner-logo">
+          <span class="partner-name">BIRAC</span>
+        </div>
+        <div class="partner-card">
+          <img src="/assets/ccamp.jpg" alt="C-CAMP" class="partner-logo">
+          <span class="partner-name">C-CAMP</span>
+        </div>
+        <div class="partner-card">
+          <img src="/assets/dpiit.jpg" alt="DPIIT" class="partner-logo">
+          <span class="partner-name">DPIIT</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       6. SPACING SCALE
+       ═══════════════════════════════════════════ -->
+  <section class="ds-section">
+    <h2 class="ds-section-title">Spacing</h2>
+    <p class="ds-section-desc">Common spacing values used across components and sections.</p>
+
+    <div class="ds-spacing-item"><div class="ds-spacing-label">4px (1)</div><div class="ds-spacing-bar" style="width: 4px;"></div></div>
+    <div class="ds-spacing-item"><div class="ds-spacing-label">8px (2)</div><div class="ds-spacing-bar" style="width: 8px;"></div></div>
+    <div class="ds-spacing-item"><div class="ds-spacing-label">12px (3)</div><div class="ds-spacing-bar" style="width: 12px;"></div></div>
+    <div class="ds-spacing-item"><div class="ds-spacing-label">16px (4)</div><div class="ds-spacing-bar" style="width: 16px;"></div></div>
+    <div class="ds-spacing-item"><div class="ds-spacing-label">24px (6)</div><div class="ds-spacing-bar" style="width: 24px;"></div></div>
+    <div class="ds-spacing-item"><div class="ds-spacing-label">32px (8)</div><div class="ds-spacing-bar" style="width: 32px;"></div></div>
+    <div class="ds-spacing-item"><div class="ds-spacing-label">48px (12)</div><div class="ds-spacing-bar" style="width: 48px;"></div></div>
+    <div class="ds-spacing-item"><div class="ds-spacing-label">64px (16)</div><div class="ds-spacing-bar" style="width: 64px;"></div></div>
+    <div class="ds-spacing-item"><div class="ds-spacing-label">80px (20)</div><div class="ds-spacing-bar" style="width: 80px;"></div></div>
+    <div class="ds-spacing-item"><div class="ds-spacing-label">96px (24)</div><div class="ds-spacing-bar" style="width: 96px;"></div></div>
+    <div class="ds-spacing-item"><div class="ds-spacing-label">128px (32)</div><div class="ds-spacing-bar" style="width: 128px;"></div></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       7. ICONS
+       ═══════════════════════════════════════════ -->
+  <section class="ds-section">
+    <h2 class="ds-section-title">Icons</h2>
+    <p class="ds-section-desc">Phosphor Icons (Fill weight) — loaded from unpkg CDN.</p>
+
+    <p class="ds-label">Common icons used on the site</p>
+    <div class="ds-icon-grid">
+      <div class="ds-icon-item"><i class="ph-fill ph-envelope"></i><span>envelope</span></div>
+      <div class="ds-icon-item"><i class="ph-fill ph-phone"></i><span>phone</span></div>
+      <div class="ds-icon-item"><i class="ph-fill ph-map-pin"></i><span>map-pin</span></div>
+      <div class="ds-icon-item"><i class="ph-fill ph-calendar-blank"></i><span>calendar</span></div>
+      <div class="ds-icon-item"><i class="ph-fill ph-warning-circle"></i><span>warning</span></div>
+      <div class="ds-icon-item"><i class="ph-fill ph-clock-countdown"></i><span>clock</span></div>
+      <div class="ds-icon-item"><i class="ph-fill ph-heartbeat"></i><span>heartbeat</span></div>
+      <div class="ds-icon-item"><i class="ph-fill ph-drop"></i><span>drop</span></div>
+      <div class="ds-icon-item"><i class="ph-fill ph-brain"></i><span>brain</span></div>
+      <div class="ds-icon-item"><i class="ph-fill ph-chart-line-up"></i><span>chart-line</span></div>
+      <div class="ds-icon-item"><i class="ph-fill ph-shield-check"></i><span>shield</span></div>
+      <div class="ds-icon-item"><i class="ph-fill ph-first-aid-kit"></i><span>first-aid</span></div>
+      <div class="ds-icon-item"><i class="ph-fill ph-lightning"></i><span>lightning</span></div>
+      <div class="ds-icon-item"><i class="ph-fill ph-arrow-right"></i><span>arrow-right</span></div>
+      <div class="ds-icon-item"><i class="ph-fill ph-check-circle"></i><span>check</span></div>
+      <div class="ds-icon-item"><i class="ph-fill ph-x-circle"></i><span>x-circle</span></div>
+    </div>
+
+    <p class="ds-label" style="margin-top: 24px;">Size variations</p>
+    <div style="display: flex; align-items: end; gap: 24px;">
+      <div style="text-align: center;"><i class="ph-fill ph-heartbeat" style="font-size: 16px; color: var(--color-navy-800);"></i><br><span style="font-size: 10px; color: #9ca3af;">16px</span></div>
+      <div style="text-align: center;"><i class="ph-fill ph-heartbeat" style="font-size: 20px; color: var(--color-navy-800);"></i><br><span style="font-size: 10px; color: #9ca3af;">20px</span></div>
+      <div style="text-align: center;"><i class="ph-fill ph-heartbeat" style="font-size: 24px; color: var(--color-navy-800);"></i><br><span style="font-size: 10px; color: #9ca3af;">24px</span></div>
+      <div style="text-align: center;"><i class="ph-fill ph-heartbeat" style="font-size: 32px; color: var(--color-navy-800);"></i><br><span style="font-size: 10px; color: #9ca3af;">32px</span></div>
+      <div style="text-align: center;"><i class="ph-fill ph-heartbeat" style="font-size: 48px; color: var(--color-navy-800);"></i><br><span style="font-size: 10px; color: #9ca3af;">48px</span></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       8. PAGE COMPONENTS
+       ═══════════════════════════════════════════ -->
+  <section class="ds-section">
+    <h2 class="ds-section-title">Page Components</h2>
+    <p class="ds-section-desc">Section-level patterns used to compose pages.</p>
+
+    <p class="ds-label">Section Header Pattern</p>
+    <div class="ds-preview" style="text-align: center;">
+      <p class="eyebrow">Our Vision</p>
+      <h2 style="font-family: var(--font-heading); font-size: 36px; font-weight: 700; color: var(--color-navy-800); margin-bottom: 12px; letter-spacing: -0.01em;">Urine is the body's most accessible <span style="color: var(--color-teal-600);">real-time diagnostic signal</span></h2>
+      <p class="section-description" style="margin: 0;">Unlike blood draws that require invasive sampling, urine is continuously produced and naturally collected in catheterized patients.</p>
+    </div>
+
+    <p class="ds-label">CTA Section (Dark)</p>
+    <div class="ds-preview-dark ds-preview" style="text-align: center;">
+      <p class="eyebrow eyebrow-teal" style="margin-bottom: 12px;">Join Our Mission</p>
+      <h2 style="font-family: var(--font-heading); font-size: 36px; font-weight: 700; color: white; margin-bottom: 12px;">Ready to transform patient care?</h2>
+      <p style="font-family: var(--font-body); font-size: 18px; color: var(--color-navy-200); margin-bottom: 24px; max-width: 540px; margin-left: auto; margin-right: auto;">Join us in building the future of real-time kidney monitoring.</p>
+      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a href="#" class="btn-white">Get in Touch</a>
+        <a href="#" class="btn-outline-white">View Open Roles</a>
+      </div>
+    </div>
+
+    <p class="ds-label">Logo Ticker</p>
+    <div class="ds-preview" style="overflow: hidden; padding: 24px 0;">
+      <div class="logo-ticker-track">
+        <div class="ticker-set">
+          <img src="/assets/cpdmed.jpg" alt="CPD Med" class="ticker-logo">
+          <img src="/assets/startup-karnataka.jpg" alt="Startup Karnataka" class="ticker-logo">
+          <img src="/assets/ktech.jpg" alt="KITS" class="ticker-logo">
+          <img src="/assets/make-in-india.jpg" alt="Make in India" class="ticker-logo">
+          <img src="/assets/dpiit.jpg" alt="DPIIT" class="ticker-logo">
+          <img src="/assets/birac.jpg" alt="BIRAC" class="ticker-logo">
+          <img src="/assets/ccamp.jpg" alt="C-CAMP" class="ticker-logo">
+        </div>
+        <div class="ticker-set" aria-hidden="true">
+          <img src="/assets/cpdmed.jpg" alt="CPD Med" class="ticker-logo">
+          <img src="/assets/startup-karnataka.jpg" alt="Startup Karnataka" class="ticker-logo">
+          <img src="/assets/ktech.jpg" alt="KITS" class="ticker-logo">
+          <img src="/assets/make-in-india.jpg" alt="Make in India" class="ticker-logo">
+          <img src="/assets/dpiit.jpg" alt="DPIIT" class="ticker-logo">
+          <img src="/assets/birac.jpg" alt="BIRAC" class="ticker-logo">
+          <img src="/assets/ccamp.jpg" alt="C-CAMP" class="ticker-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
