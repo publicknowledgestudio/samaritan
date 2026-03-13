@@ -18,7 +18,7 @@ permalink: /blog/
     <div class="blog-grid">
       {% set posts = collections.blog %}
       {% for post in posts %}
-      <a href="{{ post.url }}" class="blog-card reveal{% if loop.index <= 3 %} reveal-delay-{{ loop.index0 }}{% endif %}">
+      <a href="{{ post.url }}" class="card card-white card-hoverable blog-card reveal{% if loop.index <= 3 %} reveal-delay-{{ loop.index0 }}{% endif %}">
         <div class="blog-card-body">
           <div class="blog-card-meta">
             <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>

@@ -41,7 +41,7 @@ permalink: /about/
     <p class="eyebrow">Our Team</p>
     <h2 class="reveal">Meet the Founders</h2>
     <div class="team-grid">
-      <div class="team-card reveal">
+      <div class="card card-light card-md card-hoverable team-card reveal">
         <img src="/assets/karan.jpg" alt="Karan Rao" class="team-photo">
         <h4>Karan Rao</h4>
         <p class="role">CTO</p>
@@ -52,7 +52,7 @@ permalink: /about/
           </a>
         </div>
       </div>
-      <div class="team-card reveal reveal-delay-1">
+      <div class="card card-light card-md card-hoverable team-card reveal reveal-delay-1">
         <img src="/assets/raghav.jpg" alt="Raghav Behl" class="team-photo">
         <h4>Raghav Behl</h4>
         <p class="role">CEO</p>
@@ -70,7 +70,7 @@ permalink: /about/
       <h3 class="advisors-heading reveal">Clinical Advisors & Mentors</h3>
       <div class="advisors-grid">
         {% for person in site.team.advisors %}
-        <div class="advisor-card reveal{% if loop.index > 1 %} reveal-delay-{{ loop.index0 }}{% endif %}">
+        <div class="card card-light card-sm card-hoverable advisor-card reveal{% if loop.index > 1 %} reveal-delay-{{ loop.index0 }}{% endif %}">
           <div class="advisor-avatar">{{ person.initials }}</div>
           <div class="advisor-info">
             <h4>{{ person.name }}</h4>
@@ -90,31 +90,31 @@ permalink: /about/
     <p class="eyebrow reveal">Our Partners &amp; Affiliations</p>
     <h2 class="reveal reveal-delay-1">Proudly collaborating with leading organizations and initiatives to advance medical innovation</h2>
     <div class="partners-grid reveal reveal-delay-2">
-      <div class="partner-card">
+      <div class="card card-white card-md partner-card">
         <img src="/assets/cpdmed.jpg" alt="CPD Med" class="partner-logo">
         <span class="partner-name">CPD Med</span>
       </div>
-      <div class="partner-card">
+      <div class="card card-white card-md partner-card">
         <img src="/assets/startup-karnataka.jpg" alt="Startup Karnataka" class="partner-logo">
         <span class="partner-name">Startup Karnataka</span>
       </div>
-      <div class="partner-card">
+      <div class="card card-white card-md partner-card">
         <img src="/assets/ktech.jpg" alt="KITS" class="partner-logo">
         <span class="partner-name">KITS</span>
       </div>
-      <div class="partner-card">
+      <div class="card card-white card-md partner-card">
         <img src="/assets/make-in-india.jpg" alt="Make in India" class="partner-logo">
         <span class="partner-name">Make in India</span>
       </div>
-      <div class="partner-card">
+      <div class="card card-white card-md partner-card">
         <img src="/assets/dpiit.jpg" alt="DPIIT" class="partner-logo">
         <span class="partner-name">DPIIT</span>
       </div>
-      <div class="partner-card">
+      <div class="card card-white card-md partner-card">
         <img src="/assets/birac.jpg" alt="BIRAC" class="partner-logo">
         <span class="partner-name">BIRAC</span>
       </div>
-      <div class="partner-card">
+      <div class="card card-white card-md partner-card">
         <img src="/assets/ccamp.jpg" alt="C-CAMP" class="partner-logo">
         <span class="partner-name">C-CAMP</span>
       </div>
@@ -137,17 +137,17 @@ permalink: /about/
 <section class="careers-values">
   <div class="container">
     <div class="careers-values-grid">
-      <div class="careers-value-card reveal">
+      <div class="card card-light card-md careers-value-card reveal">
         <div class="careers-value-icon"><i class="ph-fill ph-heart-half" aria-hidden="true"></i></div>
         <h4>Mission-driven</h4>
         <p>Every line of code, every sensor calibration, every clinical conversation is in service of detecting kidney injury earlier and saving lives.</p>
       </div>
-      <div class="careers-value-card reveal reveal-delay-1">
+      <div class="card card-light card-md careers-value-card reveal reveal-delay-1">
         <div class="careers-value-icon"><i class="ph-fill ph-puzzle-piece" aria-hidden="true"></i></div>
         <h4>Full-stack problems</h4>
         <p>We build hardware, AI, and software together. You won't work in a silo — you'll see how your work connects to the entire system.</p>
       </div>
-      <div class="careers-value-card reveal reveal-delay-2">
+      <div class="card card-light card-md careers-value-card reveal reveal-delay-2">
         <div class="careers-value-icon"><i class="ph-fill ph-rocket-launch" aria-hidden="true"></i></div>
         <h4>Early stage, high impact</h4>
         <p>We're pre-clinical and growing. Joining now means shaping the product, the culture, and the company from the ground up.</p>
