@@ -10,28 +10,28 @@
    ========================================================================== */
 
 @theme {
-  /* Samaritan Teal (Primary Brand) */
-  --color-navy-950: #091A16;
-  --color-navy-900: #0E2D28;
-  --color-navy-800: #14433C;
-  --color-navy-700: #1A5A50;
-  --color-navy-600: #217264;
-  --color-navy-500: #2B8F7E;
-  --color-navy-400: #46AE9A;
-  --color-navy-300: #78CCB8;
-  --color-navy-200: #AFE3D5;
-  --color-navy-100: #D7F2EA;
-  --color-navy-50: #ECFAF6;
+  /* Primary (Samaritan Teal) */
+  --color-primary-950: #091A16;
+  --color-primary-900: #0E2D28;
+  --color-primary-800: #14433C;
+  --color-primary-700: #1A5A50;
+  --color-primary-600: #217264;
+  --color-primary-500: #2B8F7E;
+  --color-primary-400: #46AE9A;
+  --color-primary-300: #78CCB8;
+  --color-primary-200: #AFE3D5;
+  --color-primary-100: #D7F2EA;
+  --color-primary-50: #ECFAF6;
 
-  /* Yellow-Green Accent */
-  --color-teal-700: #5C7A12;
-  --color-teal-600: #6E9418;
-  --color-teal-500: #84B020;
-  --color-teal-400: #A3CC3E;
-  --color-teal-300: #C2E06A;
-  --color-teal-200: #DCEE9E;
-  --color-teal-100: #EEF7CC;
-  --color-teal-50: #F8FCE8;
+  /* Secondary (Yellow-Green) */
+  --color-secondary-700: #5C7A12;
+  --color-secondary-600: #6E9418;
+  --color-secondary-500: #84B020;
+  --color-secondary-400: #A3CC3E;
+  --color-secondary-300: #C2E06A;
+  --color-secondary-200: #DCEE9E;
+  --color-secondary-100: #EEF7CC;
+  --color-secondary-50: #F8FCE8;
 
   /* Typography */
   --font-heading: 'TASA Explorer', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -196,7 +196,7 @@ h4 {
 }
 
 .card-dark {
-  background: linear-gradient(135deg, var(--color-navy-800), var(--color-navy-600));
+  background: linear-gradient(135deg, var(--color-primary-800), var(--color-primary-600));
   color: white;
 }
 
@@ -270,7 +270,7 @@ h4 {
   font-weight: 600;
   font-size: var(--text-sm);
   letter-spacing: var(--tracking-wide);
-  color: var(--color-teal-600);
+  color: var(--color-secondary-600);
   text-align: center;
   margin-bottom: 8px;
 }
@@ -280,7 +280,7 @@ h4 {
 }
 
 .eyebrow-teal {
-  color: var(--color-teal-400);
+  color: var(--color-secondary-400);
 }
 
 .section-description {
@@ -292,7 +292,7 @@ h4 {
 }
 
 .teal-accent {
-  color: var(--color-teal-400);
+  color: var(--color-secondary-400);
 }
 
 /* ==========================================================================
@@ -330,7 +330,7 @@ h4 {
 }
 
 .button-primary {
-  background: linear-gradient(to bottom, var(--color-navy-600), var(--color-navy-700));
+  background: linear-gradient(to bottom, var(--color-primary-600), var(--color-primary-700));
   color: white;
 }
 
@@ -345,7 +345,7 @@ h4 {
 
 .button-secondary {
   background: linear-gradient(to bottom, var(--color-gray-50), var(--color-gray-100));
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
   box-shadow: 0px 1px 4px -2px rgba(0, 0, 0, 0.25), 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -365,7 +365,7 @@ h4 {
   gap: 8px;
   padding: 14px 28px;
   background: white;
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
   font-family: var(--font-body);
   font-weight: 600;
   font-size: var(--text-base);
@@ -424,7 +424,7 @@ h4 {
   align-items: center;
   gap: 8px;
   padding: 14px 28px;
-  background: linear-gradient(to bottom, var(--color-navy-600), var(--color-navy-700));
+  background: linear-gradient(to bottom, var(--color-primary-600), var(--color-primary-700));
   color: white;
   font-family: var(--font-body);
   font-weight: 600;
@@ -458,7 +458,7 @@ h4 {
   gap: 8px;
   padding: 14px 28px;
   background: transparent;
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
   font-family: var(--font-body);
   font-weight: 500;
   font-size: var(--text-base);
@@ -628,7 +628,7 @@ h4 {
   align-items: center;
   gap: 8px;
   padding: 8px 20px;
-  background: linear-gradient(to bottom, var(--color-navy-600), var(--color-navy-700));
+  background: linear-gradient(to bottom, var(--color-primary-600), var(--color-primary-700));
   color: white !important;
   border-radius: 8px;
   font-size: var(--text-sm);
@@ -741,7 +741,7 @@ h4 {
 
 .mobile-nav-links a:hover,
 .mobile-nav-links a.active {
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
 }
 
 .mobile-nav-sub {
@@ -762,14 +762,14 @@ h4 {
 }
 
 .mobile-nav-sub a:hover {
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
 }
 
 .mobile-nav-cta {
   display: block;
   margin-top: 24px;
   padding: 14px 20px;
-  background: linear-gradient(to bottom, var(--color-navy-600), var(--color-navy-700));
+  background: linear-gradient(to bottom, var(--color-primary-600), var(--color-primary-700));
   color: white;
   text-align: center;
   text-decoration: none;
@@ -798,7 +798,7 @@ h4 {
 
 .landing-footer h4 {
   font-family: var(--font-body);
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: var(--tracking-wide);
@@ -827,7 +827,7 @@ h4 {
 }
 
 .landing-footer .footer-links a:hover {
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
 }
 
 .footer-brand {
@@ -860,11 +860,11 @@ h4 {
 }
 
 .footer-contact a:hover {
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
 }
 
 .footer-contact i {
-  color: var(--color-teal-600);
+  color: var(--color-secondary-600);
   font-size: var(--text-base);
 }
 
@@ -897,7 +897,7 @@ h4 {
 }
 
 .footer-legal-links a:hover {
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
 }
 
 .footer-subscribe {
@@ -924,14 +924,14 @@ h4 {
 }
 
 .footer-subscribe input:focus {
-  border-color: var(--color-teal-500);
+  border-color: var(--color-secondary-500);
 }
 
 .footer-subscribe button {
   padding: 10px 16px;
-  border: 1px solid var(--color-teal-600);
+  border: 1px solid var(--color-secondary-600);
   border-radius: 0 8px 8px 0;
-  background: var(--color-teal-600);
+  background: var(--color-secondary-600);
   color: white;
   font-size: var(--text-base);
   cursor: pointer;
@@ -941,8 +941,8 @@ h4 {
 }
 
 .footer-subscribe button:hover {
-  background: var(--color-teal-500);
-  border-color: var(--color-teal-500);
+  background: var(--color-secondary-500);
+  border-color: var(--color-secondary-500);
 }
 
 .footer-divider {
@@ -1047,7 +1047,7 @@ h4 {
   top: -100px;
   left: 16px;
   padding: 8px 16px;
-  background: var(--color-navy-800);
+  background: var(--color-primary-800);
   color: white;
   font-weight: 600;
   border-radius: 8px;
@@ -1061,7 +1061,7 @@ h4 {
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-teal-500);
+  outline: 2px solid var(--color-secondary-500);
   outline-offset: 2px;
 }
 
@@ -1111,7 +1111,7 @@ h4 {
   line-height: var(--leading-none);
   max-width: 750px;
   margin: 0 auto 24px;
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
 }
 
 .hero-lead {
@@ -1149,7 +1149,7 @@ h4 {
   font-size: var(--text-6xl);
   line-height: var(--leading-none);
   letter-spacing: var(--tracking-heading);
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
   margin-bottom: 8px;
 }
 
@@ -1191,7 +1191,7 @@ h4 {
 
 /* What AroBag Measures */
 .measures-section {
-  background: var(--color-navy-950);
+  background: var(--color-primary-950);
   color: white;
 }
 
@@ -1217,7 +1217,7 @@ h4 {
   margin-bottom: 16px;
   font-size: var(--text-xl);
   background: rgba(13, 148, 136, 0.15);
-  color: var(--color-teal-400);
+  color: var(--color-secondary-400);
 }
 
 .measures-card h4 {
@@ -1234,7 +1234,7 @@ h4 {
 
 .measures-card sup {
   font-size: var(--text-xs);
-  color: var(--color-teal-400);
+  color: var(--color-secondary-400);
 }
 
 /* Patient Funnel Section */
@@ -1276,20 +1276,20 @@ h4 {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-teal-100), var(--color-teal-50));
+  background: linear-gradient(135deg, var(--color-secondary-100), var(--color-secondary-50));
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 16px;
   font-size: var(--text-2xl);
-  color: var(--color-teal-700);
-  border: 2px solid var(--color-teal-200);
+  color: var(--color-secondary-700);
+  border: 2px solid var(--color-secondary-200);
 }
 
 .funnel-step:nth-child(3) .funnel-icon {
-  background: linear-gradient(135deg, var(--color-navy-100), var(--color-navy-50));
-  color: var(--color-navy-700);
-  border-color: var(--color-navy-200);
+  background: linear-gradient(135deg, var(--color-primary-100), var(--color-primary-50));
+  color: var(--color-primary-700);
+  border-color: var(--color-primary-200);
 }
 
 .funnel-step:nth-child(5) .funnel-icon {
@@ -1304,7 +1304,7 @@ h4 {
   font-size: var(--text-5xl);
   line-height: var(--leading-none);
   letter-spacing: var(--tracking-heading);
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
   margin-bottom: 8px;
 }
 
@@ -1326,13 +1326,13 @@ h4 {
   letter-spacing: var(--tracking-wide);
   padding: 4px 12px;
   border-radius: 100px;
-  background: var(--color-teal-50);
-  color: var(--color-teal-700);
+  background: var(--color-secondary-50);
+  color: var(--color-secondary-700);
 }
 
 .funnel-step:nth-child(3) .funnel-tag {
-  background: var(--color-navy-50);
-  color: var(--color-navy-700);
+  background: var(--color-primary-50);
+  color: var(--color-primary-700);
 }
 
 .funnel-step:nth-child(5) .funnel-tag {
@@ -1370,7 +1370,7 @@ h4 {
 
 /* Vision Section */
 .vision-section {
-  background: var(--color-navy-900);
+  background: var(--color-primary-900);
   color: white;
   position: relative;
 }
@@ -1454,7 +1454,7 @@ h4 {
 
 /* Product Intro Section */
 .product-intro-section {
-  background: linear-gradient(180deg, var(--color-navy-950) 0%, var(--color-navy-800) 100%);
+  background: linear-gradient(180deg, var(--color-primary-950) 0%, var(--color-primary-800) 100%);
   color: white;
 }
 
@@ -1490,7 +1490,7 @@ h4 {
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
-  color: var(--color-teal-400);
+  color: var(--color-secondary-400);
   font-size: var(--text-2xl);
 }
 
@@ -1540,7 +1540,7 @@ h4 {
   left: calc(16.67% + 20px);
   right: calc(16.67% + 20px);
   height: 2px;
-  background: linear-gradient(90deg, var(--color-teal-400), var(--color-navy-400), var(--color-teal-400));
+  background: linear-gradient(90deg, var(--color-secondary-400), var(--color-primary-400), var(--color-secondary-400));
   opacity: 0.3;
 }
 
@@ -1563,21 +1563,21 @@ h4 {
 }
 
 .hiw-step:nth-child(1) .hiw-step-number {
-  background: linear-gradient(135deg, var(--color-teal-100), var(--color-teal-50));
-  color: var(--color-teal-700);
-  border: 2px solid var(--color-teal-200);
+  background: linear-gradient(135deg, var(--color-secondary-100), var(--color-secondary-50));
+  color: var(--color-secondary-700);
+  border: 2px solid var(--color-secondary-200);
 }
 
 .hiw-step:nth-child(2) .hiw-step-number {
-  background: linear-gradient(135deg, var(--color-navy-100), var(--color-navy-50));
-  color: var(--color-navy-700);
-  border: 2px solid var(--color-navy-200);
+  background: linear-gradient(135deg, var(--color-primary-100), var(--color-primary-50));
+  color: var(--color-primary-700);
+  border: 2px solid var(--color-primary-200);
 }
 
 .hiw-step:nth-child(3) .hiw-step-number {
-  background: linear-gradient(135deg, var(--color-teal-100), var(--color-teal-50));
-  color: var(--color-teal-700);
-  border: 2px solid var(--color-teal-200);
+  background: linear-gradient(135deg, var(--color-secondary-100), var(--color-secondary-50));
+  color: var(--color-secondary-700);
+  border: 2px solid var(--color-secondary-200);
 }
 
 .hiw-step h4 {
@@ -1640,7 +1640,7 @@ h4 {
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: var(--text-3xl);
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
   margin-bottom: 4px;
 }
 
@@ -1667,12 +1667,12 @@ h4 {
 }
 
 .regulatory-card:hover {
-  border-color: var(--color-navy-200);
+  border-color: var(--color-primary-200);
 }
 
 .regulatory-card-icon {
-  background: linear-gradient(135deg, var(--color-navy-100), var(--color-navy-50));
-  color: var(--color-navy-700);
+  background: linear-gradient(135deg, var(--color-primary-100), var(--color-primary-50));
+  color: var(--color-primary-700);
 }
 
 .regulatory-card h4 {
@@ -1702,7 +1702,7 @@ h4 {
   left: 40px;
   right: 40px;
   height: 2px;
-  background: linear-gradient(90deg, var(--color-teal-400), var(--color-navy-300), var(--color-gray-300));
+  background: linear-gradient(90deg, var(--color-secondary-400), var(--color-primary-300), var(--color-gray-300));
 }
 
 .milestone {
@@ -1725,15 +1725,15 @@ h4 {
 }
 
 .milestone-completed .milestone-dot {
-  background: var(--color-teal-100);
-  color: var(--color-teal-700);
-  border: 2px solid var(--color-teal-300);
+  background: var(--color-secondary-100);
+  color: var(--color-secondary-700);
+  border: 2px solid var(--color-secondary-300);
 }
 
 .milestone-current .milestone-dot {
-  background: var(--color-navy-100);
-  color: var(--color-navy-700);
-  border: 2px solid var(--color-navy-400);
+  background: var(--color-primary-100);
+  color: var(--color-primary-700);
+  border: 2px solid var(--color-primary-400);
   box-shadow: 0 0 0 4px rgba(51, 51, 112, 0.15);
 }
 
@@ -1759,7 +1759,7 @@ h4 {
 }
 
 .milestone-current .milestone-label {
-  color: var(--color-navy-700);
+  color: var(--color-primary-700);
   font-weight: 600;
 }
 
@@ -1821,14 +1821,14 @@ h4 {
 }
 
 .team-social a {
-  color: var(--color-navy-600);
+  color: var(--color-primary-600);
   text-decoration: none;
   font-size: var(--text-sm);
   font-weight: 500;
 }
 
 .team-social a:hover {
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
 }
 
 /* Advisors & Mentors */
@@ -1863,13 +1863,13 @@ h4 {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-teal-200), var(--color-teal-100));
+  background: linear-gradient(135deg, var(--color-secondary-200), var(--color-secondary-100));
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: var(--text-base);
   font-weight: 600;
-  color: var(--color-teal-800);
+  color: var(--color-secondary-800);
   flex-shrink: 0;
 }
 
@@ -1882,7 +1882,7 @@ h4 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: var(--tracking-wide);
-  color: var(--color-teal-600);
+  color: var(--color-secondary-600);
   margin-bottom: 6px;
 }
 
@@ -1895,7 +1895,7 @@ h4 {
 
 /* CTA Section */
 .cta-section {
-  background: var(--color-navy-950);
+  background: var(--color-primary-950);
   color: white;
   text-align: center;
   position: relative;
@@ -1946,7 +1946,7 @@ h4 {
 }
 
 .cta-section .eyebrow-teal {
-  color: var(--color-teal-300);
+  color: var(--color-secondary-300);
 }
 
 .cta-hiring {
@@ -1959,13 +1959,13 @@ h4 {
 }
 
 .cta-hiring a {
-  color: var(--color-teal-300);
+  color: var(--color-secondary-300);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
 .cta-hiring a:hover {
-  color: var(--color-teal-200);
+  color: var(--color-secondary-200);
 }
 
 /* Responsive overrides */
@@ -1982,7 +1982,7 @@ h4 {
 }
 
 .blog-hero h1 {
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
   margin-bottom: 8px;
 }
 
@@ -2067,7 +2067,7 @@ h4 {
 }
 
 .post-title {
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
   margin-bottom: 16px;
 }
 
@@ -2087,8 +2087,8 @@ h4 {
 .tag {
   display: inline-block;
   padding: 4px 12px;
-  background: var(--color-navy-50);
-  color: var(--color-navy-600);
+  background: var(--color-primary-50);
+  color: var(--color-primary-600);
   font-size: var(--text-sm);
   font-weight: 500;
   border-radius: 100px;
@@ -2110,13 +2110,13 @@ h4 {
 .prose h2 {
   margin-top: 48px;
   margin-bottom: 16px;
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
 }
 
 .prose h3 {
   margin-top: 36px;
   margin-bottom: 12px;
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
 }
 
 .prose ul,
@@ -2133,7 +2133,7 @@ h4 {
 }
 
 .prose blockquote {
-  border-left: 3px solid var(--color-teal-400);
+  border-left: 3px solid var(--color-secondary-400);
   padding-left: 20px;
   margin: 32px 0;
   font-style: italic;
@@ -2150,15 +2150,15 @@ h4 {
 }
 
 .prose a {
-  color: var(--color-teal-600);
+  color: var(--color-secondary-600);
   text-decoration: underline;
-  text-decoration-color: var(--color-teal-200);
+  text-decoration-color: var(--color-secondary-200);
   text-underline-offset: 2px;
   transition: text-decoration-color 0.2s;
 }
 
 .prose a:hover {
-  text-decoration-color: var(--color-teal-600);
+  text-decoration-color: var(--color-secondary-600);
 }
 
 .prose hr {
@@ -2182,7 +2182,7 @@ h4 {
 }
 
 .prose pre {
-  background: var(--color-navy-950);
+  background: var(--color-primary-950);
   color: var(--color-gray-300);
   padding: 24px;
   border-radius: 8px;
@@ -2208,7 +2208,7 @@ h4 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: var(--color-navy-600);
+  color: var(--color-primary-600);
   text-decoration: none;
   font-weight: 500;
   font-size: var(--text-sm);
@@ -2216,7 +2216,7 @@ h4 {
 }
 
 .back-to-blog:hover {
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
 }
 
 /* ==========================================================================
@@ -2253,12 +2253,12 @@ h4 {
   align-items: center;
   gap: 8px;
   padding: 6px 16px;
-  background: var(--color-teal-50);
-  border: 1px solid var(--color-teal-200);
+  background: var(--color-secondary-50);
+  border: 1px solid var(--color-secondary-200);
   border-radius: 100px;
   font-size: var(--text-sm);
   font-weight: 500;
-  color: var(--color-teal-700);
+  color: var(--color-secondary-700);
 }
 
 .product-badge-wrapper {
@@ -2300,7 +2300,7 @@ h4 {
   max-width: 960px;
   margin: 0 auto;
   aspect-ratio: 16/9;
-  background: linear-gradient(135deg, var(--color-navy-100) 0%, var(--color-navy-50) 50%, var(--color-teal-50) 100%);
+  background: linear-gradient(135deg, var(--color-primary-100) 0%, var(--color-primary-50) 50%, var(--color-secondary-50) 100%);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -2332,7 +2332,7 @@ h4 {
   align-items: center;
   justify-content: center;
   font-size: var(--text-4xl);
-  color: var(--color-navy-600);
+  color: var(--color-primary-600);
   position: relative;
   z-index: 1;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -2341,7 +2341,7 @@ h4 {
 .product-visual-label {
   font-size: var(--text-sm);
   font-weight: 500;
-  color: var(--color-navy-500);
+  color: var(--color-primary-500);
   position: relative;
   z-index: 1;
   padding: 8px 16px;
@@ -2384,14 +2384,14 @@ h4 {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--color-teal-400), var(--color-navy-400));
+  background: linear-gradient(90deg, var(--color-secondary-400), var(--color-primary-400));
   opacity: 0;
   transition: opacity 0.3s;
 }
 
 .system-card:hover {
   background: white;
-  border-color: var(--color-navy-200);
+  border-color: var(--color-primary-200);
 }
 
 .system-card:hover::before {
@@ -2399,18 +2399,18 @@ h4 {
 }
 
 .system-card:nth-child(1) .system-card-icon {
-  background: linear-gradient(135deg, var(--color-teal-100), var(--color-teal-50));
-  color: var(--color-teal-700);
+  background: linear-gradient(135deg, var(--color-secondary-100), var(--color-secondary-50));
+  color: var(--color-secondary-700);
 }
 
 .system-card:nth-child(2) .system-card-icon {
-  background: linear-gradient(135deg, var(--color-navy-100), var(--color-navy-50));
-  color: var(--color-navy-700);
+  background: linear-gradient(135deg, var(--color-primary-100), var(--color-primary-50));
+  color: var(--color-primary-700);
 }
 
 .system-card:nth-child(3) .system-card-icon {
-  background: linear-gradient(135deg, var(--color-teal-100), var(--color-teal-50));
-  color: var(--color-teal-700);
+  background: linear-gradient(135deg, var(--color-secondary-100), var(--color-secondary-50));
+  color: var(--color-secondary-700);
 }
 
 .system-card h3 {
@@ -2441,7 +2441,7 @@ h4 {
 }
 
 .system-card-features li i {
-  color: var(--color-teal-600);
+  color: var(--color-secondary-600);
   font-size: var(--text-lg);
   flex-shrink: 0;
   margin-top: 1px;
@@ -2450,7 +2450,7 @@ h4 {
 /* How It Works (Timeline) */
 .hiw-product-section {
   padding: 120px 0;
-  background: var(--color-navy-900);
+  background: var(--color-primary-900);
   color: white;
   position: relative;
   overflow: hidden;
@@ -2493,7 +2493,7 @@ h4 {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(to bottom, var(--color-teal-500), var(--color-navy-500), var(--color-teal-500));
+  background: linear-gradient(to bottom, var(--color-secondary-500), var(--color-primary-500), var(--color-secondary-500));
   opacity: 0.3;
 }
 
@@ -2523,13 +2523,13 @@ h4 {
 
 .hiw-timeline-step:nth-child(odd) .hiw-timeline-marker {
   background: linear-gradient(135deg, rgba(13, 148, 136, 0.2), rgba(13, 148, 136, 0.1));
-  color: var(--color-teal-400);
+  color: var(--color-secondary-400);
   border: 2px solid rgba(13, 148, 136, 0.3);
 }
 
 .hiw-timeline-step:nth-child(even) .hiw-timeline-marker {
   background: linear-gradient(135deg, rgba(74, 74, 138, 0.3), rgba(74, 74, 138, 0.15));
-  color: var(--color-navy-300);
+  color: var(--color-primary-300);
   border: 2px solid rgba(74, 74, 138, 0.3);
 }
 
@@ -2555,7 +2555,7 @@ h4 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: var(--tracking-wide);
-  color: var(--color-teal-400);
+  color: var(--color-secondary-400);
   margin-bottom: 4px;
   display: block;
 }
@@ -2585,12 +2585,12 @@ h4 {
 
 .clinical-card:hover {
   background: white;
-  border-color: var(--color-navy-200);
+  border-color: var(--color-primary-200);
 }
 
 .clinical-card-icon {
-  background: var(--color-navy-50);
-  color: var(--color-navy-600);
+  background: var(--color-primary-50);
+  color: var(--color-primary-600);
 }
 
 .clinical-card h4 {
@@ -2619,25 +2619,25 @@ h4 {
   max-width: 860px;
   margin: 32px auto 0;
   padding: 24px;
-  background: var(--color-navy-50);
+  background: var(--color-primary-50);
   border-radius: 8px;
-  border: 1px solid var(--color-navy-100);
+  border: 1px solid var(--color-primary-100);
   text-align: center;
 }
 
 .clinical-note p {
   margin: 0;
-  color: var(--color-navy-700);
+  color: var(--color-primary-700);
   font-size: var(--text-sm);
   line-height: var(--leading-normal);
 }
 
 .clinical-note strong {
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
 }
 
 .clinical-note a {
-  color: var(--color-navy-600);
+  color: var(--color-primary-600);
   font-weight: 500;
 }
 
@@ -2678,18 +2678,18 @@ h4 {
 }
 
 .comparison-table thead th {
-  background: var(--color-navy-800);
+  background: var(--color-primary-800);
   color: white;
   font-weight: 600;
   letter-spacing: var(--tracking-normal);
 }
 
 .comparison-table thead th:first-child {
-  background: var(--color-navy-900);
+  background: var(--color-primary-900);
 }
 
 .comparison-table thead th:last-child {
-  background: var(--color-teal-700);
+  background: var(--color-secondary-700);
 }
 
 .comparison-table tbody tr:hover {
@@ -2706,12 +2706,12 @@ h4 {
 }
 
 .comparison-table tbody td:last-child {
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
   font-weight: 500;
 }
 
 .check-icon {
-  color: var(--color-teal-600);
+  color: var(--color-secondary-600);
   font-weight: 600;
 }
 
@@ -2722,7 +2722,7 @@ h4 {
 /* Product CTA Section */
 .product-cta-section {
   padding: 120px 0;
-  background: linear-gradient(135deg, var(--color-navy-800) 0%, var(--color-navy-600) 100%);
+  background: linear-gradient(135deg, var(--color-primary-800) 0%, var(--color-primary-600) 100%);
   color: white;
   text-align: center;
   position: relative;
@@ -2772,11 +2772,11 @@ h4 {
 }
 
 .product-cta-section .eyebrow-teal {
-  color: var(--color-teal-300);
+  color: var(--color-secondary-300);
 }
 
 .product-cta-note a {
-  color: var(--color-teal-300);
+  color: var(--color-secondary-300);
   text-decoration: underline;
 }
 
@@ -2818,7 +2818,7 @@ h4 {
   font-size: var(--text-sm);
   font-weight: 600;
   letter-spacing: var(--tracking-wide);
-  color: var(--color-teal-300);
+  color: var(--color-secondary-300);
   margin-bottom: 8px;
 }
 
@@ -2841,7 +2841,7 @@ h4 {
 
 .post-cta-button {
   background: white !important;
-  color: var(--color-navy-800) !important;
+  color: var(--color-primary-800) !important;
   font-weight: 600;
 }
 
@@ -2860,7 +2860,7 @@ h4 {
 }
 
 .careers-hero h1 {
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
   max-width: 600px;
 }
 
@@ -2887,8 +2887,8 @@ h4 {
   width: 48px;
   height: 48px;
   border-radius: 8px;
-  background: linear-gradient(135deg, var(--color-teal-100), var(--color-teal-50));
-  color: var(--color-teal-700);
+  background: linear-gradient(135deg, var(--color-secondary-100), var(--color-secondary-50));
+  color: var(--color-secondary-700);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2943,7 +2943,7 @@ h4 {
 .career-tile:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
   transform: translateY(-2px);
-  border-color: var(--color-teal-400);
+  border-color: var(--color-secondary-400);
 }
 
 .career-tile-content {
@@ -2952,7 +2952,7 @@ h4 {
 
 
 .career-tile h3 {
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
   margin-bottom: 8px;
 }
 
@@ -2977,7 +2977,7 @@ h4 {
 }
 
 .career-tile:hover .career-tile-arrow {
-  color: var(--color-teal-600);
+  color: var(--color-secondary-600);
   transform: translateX(4px);
 }
 
@@ -2996,7 +2996,7 @@ h4 {
 }
 
 .careers-general a {
-  color: var(--color-teal-600);
+  color: var(--color-secondary-600);
   font-weight: 500;
 }
 
@@ -3011,14 +3011,14 @@ h4 {
   align-items: center;
   gap: 6px;
   font-size: var(--text-sm);
-  color: var(--color-teal-600);
+  color: var(--color-secondary-600);
   text-decoration: none;
   margin-bottom: 24px;
   transition: color 0.2s;
 }
 
 .job-back-link:hover {
-  color: var(--color-teal-700);
+  color: var(--color-secondary-700);
 }
 
 .job-detail-header {
@@ -3037,7 +3037,7 @@ h4 {
 }
 
 .job-detail-header h1 {
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
   margin-bottom: 16px;
 }
 
@@ -3056,7 +3056,7 @@ h4 {
 }
 
 .job-detail-meta i {
-  color: var(--color-teal-600);
+  color: var(--color-secondary-600);
   font-size: var(--text-base);
 }
 
@@ -3066,7 +3066,7 @@ h4 {
 }
 
 .job-detail-body h2 {
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
   margin-top: 40px;
   margin-bottom: 16px;
 }
@@ -3093,7 +3093,7 @@ h4 {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--color-teal-400);
+  background: var(--color-secondary-400);
 }
 
 .job-detail-body p {
@@ -3109,7 +3109,7 @@ h4 {
 }
 
 .job-detail-footer-note a {
-  color: var(--color-teal-600);
+  color: var(--color-secondary-600);
 }
 
 /* ==========================================================================
@@ -3213,7 +3213,7 @@ h4 {
   font-family: var(--font-body);
   font-weight: 600;
   font-size: var(--text-sm);
-  color: var(--color-navy-800);
+  color: var(--color-primary-800);
 }
 
 /* ==========================================================================

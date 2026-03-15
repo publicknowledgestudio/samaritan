@@ -8,11 +8,11 @@ eleventyExcludeFromCollections: true
 
 <style>
   .ds-page { max-width: 1120px; margin: 0 auto; padding: 64px 24px 120px; }
-  .ds-header { border-bottom: 2px solid var(--color-navy-100); padding-bottom: 32px; margin-bottom: 64px; }
-  .ds-title { font-family: var(--font-heading); font-size: 48px; color: var(--color-navy-800); margin-bottom: 8px; }
+  .ds-header { border-bottom: 2px solid var(--color-primary-100); padding-bottom: 32px; margin-bottom: 64px; }
+  .ds-title { font-family: var(--font-heading); font-size: 48px; color: var(--color-primary-800); margin-bottom: 8px; }
   .ds-subtitle { font-family: var(--font-body); font-size: 16px; color: #6b7280; margin: 0; }
   .ds-section { margin-bottom: 80px; }
-  .ds-section-title { font-family: var(--font-heading); font-size: 28px; color: var(--color-navy-800); margin-bottom: 4px; }
+  .ds-section-title { font-family: var(--font-heading); font-size: 28px; color: var(--color-primary-800); margin-bottom: 4px; }
   .ds-section-desc { font-family: var(--font-body); font-size: 14px; color: #6b7280; margin-bottom: 28px; }
   .ds-label { font-family: var(--font-body); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #9ca3af; margin-bottom: 8px; }
   .ds-row { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }
@@ -39,21 +39,21 @@ eleventyExcludeFromCollections: true
 
   /* Spacing scale */
   .ds-spacing-item { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
-  .ds-spacing-bar { background: var(--color-teal-400); height: 16px; border-radius: 4px; }
+  .ds-spacing-bar { background: var(--color-secondary-400); height: 16px; border-radius: 4px; }
   .ds-spacing-label { font-size: 12px; font-family: monospace; color: #6b7280; white-space: nowrap; min-width: 100px; }
 
   /* Icon grid */
   .ds-icon-grid { display: flex; flex-wrap: wrap; gap: 20px; }
   .ds-icon-item { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 16px; border-radius: 10px; border: 1px solid #e5e7eb; min-width: 80px; }
-  .ds-icon-item i { font-size: 24px; color: var(--color-navy-800); }
+  .ds-icon-item i { font-size: 24px; color: var(--color-primary-800); }
   .ds-icon-item span { font-size: 10px; color: #9ca3af; }
 
   /* Dark preview strip */
-  .ds-dark-strip { background: var(--color-navy-800); padding: 32px; border-radius: 12px; margin-top: 16px; }
+  .ds-dark-strip { background: var(--color-primary-800); padding: 32px; border-radius: 12px; margin-top: 16px; }
 
   /* Component preview box */
   .ds-preview { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 12px; padding: 32px; margin-bottom: 16px; }
-  .ds-preview-dark { background: var(--color-navy-800); border-color: var(--color-navy-700); }
+  .ds-preview-dark { background: var(--color-primary-800); border-color: var(--color-primary-700); }
 </style>
 
 <!-- Design System Hero -->
@@ -86,29 +86,29 @@ eleventyExcludeFromCollections: true
 
     <p class="ds-label">Navy (Primary Brand)</p>
     <div class="ds-swatches" style="margin-bottom: 24px;">
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-950);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">950</div><div class="ds-swatch-hex">#0A0A1A</div></div></div>
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-900);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">900</div><div class="ds-swatch-hex">#12122B</div></div></div>
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-800);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">800</div><div class="ds-swatch-hex">#1C1C40</div></div></div>
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-700);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">700</div><div class="ds-swatch-hex">#272758</div></div></div>
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-600);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">600</div><div class="ds-swatch-hex">#333370</div></div></div>
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-500);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">500</div><div class="ds-swatch-hex">#4A4A8A</div></div></div>
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-400);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">400</div><div class="ds-swatch-hex">#6868A5</div></div></div>
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-300);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">300</div><div class="ds-swatch-hex">#8E8EBF</div></div></div>
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-200);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">200</div><div class="ds-swatch-hex">#B8B8D9</div></div></div>
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-100);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">100</div><div class="ds-swatch-hex">#DCDCEC</div></div></div>
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-navy-50);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">50</div><div class="ds-swatch-hex">#EDEDF5</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-primary-950);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">950</div><div class="ds-swatch-hex">#0A0A1A</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-primary-900);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">900</div><div class="ds-swatch-hex">#12122B</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-primary-800);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">800</div><div class="ds-swatch-hex">#1C1C40</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-primary-700);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">700</div><div class="ds-swatch-hex">#272758</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-primary-600);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">600</div><div class="ds-swatch-hex">#333370</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-primary-500);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">500</div><div class="ds-swatch-hex">#4A4A8A</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-primary-400);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">400</div><div class="ds-swatch-hex">#6868A5</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-primary-300);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">300</div><div class="ds-swatch-hex">#8E8EBF</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-primary-200);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">200</div><div class="ds-swatch-hex">#B8B8D9</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-primary-100);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">100</div><div class="ds-swatch-hex">#DCDCEC</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-primary-50);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">50</div><div class="ds-swatch-hex">#EDEDF5</div></div></div>
     </div>
 
     <p class="ds-label">Teal (Accent)</p>
     <div class="ds-swatches" style="margin-bottom: 24px;">
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-teal-700);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">700</div><div class="ds-swatch-hex">#0F766E</div></div></div>
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-teal-600);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">600</div><div class="ds-swatch-hex">#0D9488</div></div></div>
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-teal-500);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">500</div><div class="ds-swatch-hex">#14B8A6</div></div></div>
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-teal-400);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">400</div><div class="ds-swatch-hex">#2DD4BF</div></div></div>
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-teal-300);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">300</div><div class="ds-swatch-hex">#5EEAD4</div></div></div>
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-teal-200);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">200</div><div class="ds-swatch-hex">#99F6E4</div></div></div>
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-teal-100);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">100</div><div class="ds-swatch-hex">#CCFBF1</div></div></div>
-      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-teal-50);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">50</div><div class="ds-swatch-hex">#F0FDFA</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-secondary-700);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">700</div><div class="ds-swatch-hex">#0F766E</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-secondary-600);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">600</div><div class="ds-swatch-hex">#0D9488</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-secondary-500);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">500</div><div class="ds-swatch-hex">#14B8A6</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-secondary-400);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">400</div><div class="ds-swatch-hex">#2DD4BF</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-secondary-300);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">300</div><div class="ds-swatch-hex">#5EEAD4</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-secondary-200);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">200</div><div class="ds-swatch-hex">#99F6E4</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-secondary-100);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">100</div><div class="ds-swatch-hex">#CCFBF1</div></div></div>
+      <div class="ds-swatch"><div class="ds-swatch-color" style="background: var(--color-secondary-50);"></div><div class="ds-swatch-info"><div class="ds-swatch-name">50</div><div class="ds-swatch-hex">#F0FDFA</div></div></div>
     </div>
 
     <p class="ds-label">Grays (Tailwind defaults)</p>
@@ -153,27 +153,27 @@ eleventyExcludeFromCollections: true
       </div>
       <div class="ds-type-row">
         <div class="ds-type-meta">--text-xl: 20px — card titles, sub-headings</div>
-        <p style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 600; color: var(--color-navy-800); margin: 0;">The quick brown fox jumps over the lazy dog</p>
+        <p style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 600; color: var(--color-primary-800); margin: 0;">The quick brown fox jumps over the lazy dog</p>
       </div>
       <div class="ds-type-row">
         <div class="ds-type-meta">--text-2xl: 24px — h4</div>
-        <p style="font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 600; color: var(--color-navy-800); margin: 0;">The quick brown fox jumps over</p>
+        <p style="font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 600; color: var(--color-primary-800); margin: 0;">The quick brown fox jumps over</p>
       </div>
       <div class="ds-type-row">
         <div class="ds-type-meta">--text-3xl: 30px — h3</div>
-        <p style="font-family: var(--font-heading); font-size: var(--text-3xl); font-weight: 600; color: var(--color-navy-800); margin: 0;">The quick brown fox jumps</p>
+        <p style="font-family: var(--font-heading); font-size: var(--text-3xl); font-weight: 600; color: var(--color-primary-800); margin: 0;">The quick brown fox jumps</p>
       </div>
       <div class="ds-type-row">
         <div class="ds-type-meta">--text-4xl: 36px — h2</div>
-        <p style="font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: 600; color: var(--color-navy-800); margin: 0; letter-spacing: var(--tracking-heading);">The quick brown fox</p>
+        <p style="font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: 600; color: var(--color-primary-800); margin: 0; letter-spacing: var(--tracking-heading);">The quick brown fox</p>
       </div>
       <div class="ds-type-row">
         <div class="ds-type-meta">--text-5xl: 48px — h1</div>
-        <p style="font-family: var(--font-heading); font-size: var(--text-5xl); font-weight: 600; color: var(--color-navy-800); margin: 0; letter-spacing: var(--tracking-heading); line-height: var(--leading-none);">The quick brown</p>
+        <p style="font-family: var(--font-heading); font-size: var(--text-5xl); font-weight: 600; color: var(--color-primary-800); margin: 0; letter-spacing: var(--tracking-heading); line-height: var(--leading-none);">The quick brown</p>
       </div>
       <div class="ds-type-row">
         <div class="ds-type-meta">--text-6xl: 60px — display, stat numbers</div>
-        <p style="font-family: var(--font-heading); font-size: var(--text-6xl); font-weight: 600; color: var(--color-navy-800); margin: 0; letter-spacing: var(--tracking-heading); line-height: var(--leading-none);">310M</p>
+        <p style="font-family: var(--font-heading); font-size: var(--text-6xl); font-weight: 600; color: var(--color-primary-800); margin: 0; letter-spacing: var(--tracking-heading); line-height: var(--leading-none);">310M</p>
       </div>
     </div>
 
@@ -181,11 +181,11 @@ eleventyExcludeFromCollections: true
     <div style="margin-bottom: 32px;">
       <div class="ds-type-row">
         <div class="ds-type-meta">--tracking-heading: -0.03em — headings, display text</div>
-        <p style="font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 600; color: var(--color-navy-800); letter-spacing: var(--tracking-heading); margin: 0;">Heading tracking for h1–h4</p>
+        <p style="font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 600; color: var(--color-primary-800); letter-spacing: var(--tracking-heading); margin: 0;">Heading tracking for h1–h4</p>
       </div>
       <div class="ds-type-row">
         <div class="ds-type-meta">--tracking-tight: -0.02em — sub-headings, card titles</div>
-        <p style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 600; color: var(--color-navy-800); letter-spacing: var(--tracking-tight); margin: 0;">Tight tracking for sub-headings</p>
+        <p style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 600; color: var(--color-primary-800); letter-spacing: var(--tracking-tight); margin: 0;">Tight tracking for sub-headings</p>
       </div>
       <div class="ds-type-row">
         <div class="ds-type-meta">--tracking-normal: 0 — body text</div>
@@ -193,7 +193,7 @@ eleventyExcludeFromCollections: true
       </div>
       <div class="ds-type-row">
         <div class="ds-type-meta">--tracking-wide: 0.05em — eyebrows, labels, uppercase</div>
-        <p style="font-family: var(--font-body); font-size: var(--text-sm); font-weight: 600; color: var(--color-teal-600); letter-spacing: var(--tracking-wide); text-transform: uppercase; margin: 0;">Wide tracking for labels</p>
+        <p style="font-family: var(--font-body); font-size: var(--text-sm); font-weight: 600; color: var(--color-secondary-600); letter-spacing: var(--tracking-wide); text-transform: uppercase; margin: 0;">Wide tracking for labels</p>
       </div>
     </div>
 
@@ -201,11 +201,11 @@ eleventyExcludeFromCollections: true
     <div>
       <div class="ds-type-row">
         <div class="ds-type-meta">--leading-none: 1 — stat numbers, display</div>
-        <p style="font-family: var(--font-heading); font-size: var(--text-5xl); font-weight: 600; color: var(--color-navy-800); line-height: var(--leading-none); margin: 0;">90%</p>
+        <p style="font-family: var(--font-heading); font-size: var(--text-5xl); font-weight: 600; color: var(--color-primary-800); line-height: var(--leading-none); margin: 0;">90%</p>
       </div>
       <div class="ds-type-row">
         <div class="ds-type-meta">--leading-tight: 1.15 — large headings</div>
-        <p style="font-family: var(--font-heading); font-size: var(--text-3xl); font-weight: 600; color: var(--color-navy-800); line-height: var(--leading-tight); margin: 0;">Real-time monitoring for<br>catheterized patients</p>
+        <p style="font-family: var(--font-heading); font-size: var(--text-3xl); font-weight: 600; color: var(--color-primary-800); line-height: var(--leading-tight); margin: 0;">Real-time monitoring for<br>catheterized patients</p>
       </div>
       <div class="ds-type-row">
         <div class="ds-type-meta">--leading-snug: 1.35 — small headings, cards</div>
@@ -320,7 +320,7 @@ eleventyExcludeFromCollections: true
       <p class="ds-label">Footer Subscribe Pattern</p>
       <div style="display: flex; gap: 0; max-width: 400px;">
         <input type="email" placeholder="Enter your email" style="flex: 1; padding: 10px 16px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px 0 0 8px; font-family: var(--font-body); font-size: 14px; color: white; background: rgba(255,255,255,0.08); outline: none;" class="ds-dark-strip">
-        <button style="padding: 10px 20px; background: var(--color-teal-500); color: white; border: none; border-radius: 0 8px 8px 0; font-family: var(--font-body); font-size: 14px; font-weight: 600; cursor: pointer;">Subscribe</button>
+        <button style="padding: 10px 20px; background: var(--color-secondary-500); color: white; border: none; border-radius: 0 8px 8px 0; font-family: var(--font-body); font-size: 14px; font-weight: 600; cursor: pointer;">Subscribe</button>
       </div>
     </div>
   </section>
@@ -389,19 +389,19 @@ eleventyExcludeFromCollections: true
     <div class="ds-preview">
       <div style="display: flex; gap: 24px; align-items: flex-start;">
         <div style="text-align: center;">
-          <div class="card-icon card-icon-sm" style="background: var(--color-teal-50); color: var(--color-teal-600);">
+          <div class="card-icon card-icon-sm" style="background: var(--color-secondary-50); color: var(--color-secondary-600);">
             <i class="ph-fill ph-drop"></i>
           </div>
           <div class="ds-type-meta">.card-icon-sm<br>40×40</div>
         </div>
         <div style="text-align: center;">
-          <div class="card-icon card-icon-md" style="background: var(--color-teal-50); color: var(--color-teal-600);">
+          <div class="card-icon card-icon-md" style="background: var(--color-secondary-50); color: var(--color-secondary-600);">
             <i class="ph-fill ph-brain"></i>
           </div>
           <div class="ds-type-meta">.card-icon-md<br>48×48</div>
         </div>
         <div style="text-align: center;">
-          <div class="card-icon card-icon-lg" style="background: var(--color-teal-50); color: var(--color-teal-600);">
+          <div class="card-icon card-icon-lg" style="background: var(--color-secondary-50); color: var(--color-secondary-600);">
             <i class="ph-fill ph-heartbeat"></i>
           </div>
           <div class="ds-type-meta">.card-icon-lg<br>56×56</div>
@@ -418,7 +418,7 @@ eleventyExcludeFromCollections: true
           <div class="ds-type-meta" style="margin-top: 8px;">.card .card-light .card-md .stat-card</div>
         </div>
         <div class="card card-light card-md card-hoverable">
-          <div class="card-icon card-icon-lg" style="background: var(--color-teal-50); color: var(--color-teal-600);">
+          <div class="card-icon card-icon-lg" style="background: var(--color-secondary-50); color: var(--color-secondary-600);">
             <i class="ph-fill ph-drop"></i>
           </div>
           <h4>Feature Card</h4>
@@ -483,11 +483,11 @@ eleventyExcludeFromCollections: true
 
     <p class="ds-label" style="margin-top: 24px;">Size variations</p>
     <div style="display: flex; align-items: end; gap: 24px;">
-      <div style="text-align: center;"><i class="ph-fill ph-heartbeat" style="font-size: 16px; color: var(--color-navy-800);"></i><br><span style="font-size: 10px; color: #9ca3af;">16px</span></div>
-      <div style="text-align: center;"><i class="ph-fill ph-heartbeat" style="font-size: 20px; color: var(--color-navy-800);"></i><br><span style="font-size: 10px; color: #9ca3af;">20px</span></div>
-      <div style="text-align: center;"><i class="ph-fill ph-heartbeat" style="font-size: 24px; color: var(--color-navy-800);"></i><br><span style="font-size: 10px; color: #9ca3af;">24px</span></div>
-      <div style="text-align: center;"><i class="ph-fill ph-heartbeat" style="font-size: 32px; color: var(--color-navy-800);"></i><br><span style="font-size: 10px; color: #9ca3af;">32px</span></div>
-      <div style="text-align: center;"><i class="ph-fill ph-heartbeat" style="font-size: 48px; color: var(--color-navy-800);"></i><br><span style="font-size: 10px; color: #9ca3af;">48px</span></div>
+      <div style="text-align: center;"><i class="ph-fill ph-heartbeat" style="font-size: 16px; color: var(--color-primary-800);"></i><br><span style="font-size: 10px; color: #9ca3af;">16px</span></div>
+      <div style="text-align: center;"><i class="ph-fill ph-heartbeat" style="font-size: 20px; color: var(--color-primary-800);"></i><br><span style="font-size: 10px; color: #9ca3af;">20px</span></div>
+      <div style="text-align: center;"><i class="ph-fill ph-heartbeat" style="font-size: 24px; color: var(--color-primary-800);"></i><br><span style="font-size: 10px; color: #9ca3af;">24px</span></div>
+      <div style="text-align: center;"><i class="ph-fill ph-heartbeat" style="font-size: 32px; color: var(--color-primary-800);"></i><br><span style="font-size: 10px; color: #9ca3af;">32px</span></div>
+      <div style="text-align: center;"><i class="ph-fill ph-heartbeat" style="font-size: 48px; color: var(--color-primary-800);"></i><br><span style="font-size: 10px; color: #9ca3af;">48px</span></div>
     </div>
   </section>
 
@@ -501,7 +501,7 @@ eleventyExcludeFromCollections: true
     <p class="ds-label">Section Header Pattern</p>
     <div class="ds-preview" style="text-align: center;">
       <p class="eyebrow">Our Vision</p>
-      <h2 style="font-family: var(--font-heading); font-size: 36px; font-weight: 700; color: var(--color-navy-800); margin-bottom: 12px; letter-spacing: -0.01em;">Urine is the body's most accessible <span style="color: var(--color-teal-600);">real-time diagnostic signal</span></h2>
+      <h2 style="font-family: var(--font-heading); font-size: 36px; font-weight: 700; color: var(--color-primary-800); margin-bottom: 12px; letter-spacing: -0.01em;">Urine is the body's most accessible <span style="color: var(--color-secondary-600);">real-time diagnostic signal</span></h2>
       <p class="section-description" style="margin: 0;">Unlike blood draws that require invasive sampling, urine is continuously produced and naturally collected in catheterized patients.</p>
     </div>
 
@@ -509,7 +509,7 @@ eleventyExcludeFromCollections: true
     <div class="ds-preview-dark ds-preview" style="text-align: center;">
       <p class="eyebrow eyebrow-teal" style="margin-bottom: 12px;">Join Our Mission</p>
       <h2 style="font-family: var(--font-heading); font-size: 36px; font-weight: 700; color: white; margin-bottom: 12px;">Ready to transform patient care?</h2>
-      <p style="font-family: var(--font-body); font-size: 18px; color: var(--color-navy-200); margin-bottom: 24px; max-width: 540px; margin-left: auto; margin-right: auto;">Join us in building the future of real-time kidney monitoring.</p>
+      <p style="font-family: var(--font-body); font-size: 18px; color: var(--color-primary-200); margin-bottom: 24px; max-width: 540px; margin-left: auto; margin-right: auto;">Join us in building the future of real-time kidney monitoring.</p>
       <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
         <a href="#" class="btn-white">Get in Touch</a>
         <a href="#" class="btn-outline-white">View Open Roles</a>
